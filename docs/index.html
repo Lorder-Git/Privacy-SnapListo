@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy — SnapListo</title>
+<link rel="alternate" hreflang="it" href="#it" />
+<link rel="alternate" hreflang="en" href="#en" />
+<link rel="alternate" hreflang="es" href="#es" />
+<link rel="alternate" hreflang="fr" href="#fr" />
+<link rel="alternate" hreflang="de" href="#de" />
+<link rel="alternate" hreflang="pt" href="#pt" />
+<style>
+  :root {
+    --accent: #0f6b5c;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --panel: #f7f9f8;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  nav.lingue { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  nav.lingue a {
+    border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px;
+    text-decoration: none; font-size: 0.9rem; color: var(--accent);
+  }
+  nav.lingue a.attiva { background: var(--accent); color: #fff; border-color: var(--accent); }
+  h1 { font-size: 1.7rem; margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  .summary {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+    padding: 20px 24px; margin-bottom: 36px;
+  }
+  .attenzione {
+    background: #fff7ed; border: 1px solid #fdba74; color: #7c2d12;
+    padding: 12px 16px; border-radius: 8px; margin: 16px 0;
+  }
+  h2 {
+    font-size: 1.25rem; margin-top: 44px; margin-bottom: 12px;
+    border-bottom: 2px solid var(--accent); padding-bottom: 6px;
+  }
+  h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: var(--accent); }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .tab { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); }
+  code { overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+  section.lingua { display: none; }
+  section.lingua.mostra { display: block; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+</style>
+<noscript><style>section.lingua { display: block; border-top: 4px solid var(--accent); margin-top: 48px; }</style></noscript>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="lingue" aria-label="Lingua / Language">
+    <a href="#it" data-l="it" hreflang="it" lang="it">Italiano</a>
+    <a href="#en" data-l="en" hreflang="en" lang="en">English</a>
+    <a href="#es" data-l="es" hreflang="es" lang="es">Español</a>
+    <a href="#fr" data-l="fr" hreflang="fr" lang="fr">Français</a>
+    <a href="#de" data-l="de" hreflang="de" lang="de">Deutsch</a>
+    <a href="#pt" data-l="pt" hreflang="pt" lang="pt">Português</a>
+  </nav>
+
+<section class="lingua" id="it" lang="it">
+
+  <h1>Informativa sulla privacy — SnapListo</h1>
+  <div class="meta">Ultimo aggiornamento: 08/11/2026 &nbsp;·&nbsp; Versione: 1.0 (app SnapListo 1.0.0 e successive, Android e web)</div>
+
+  <div class="summary">
+    <strong>In breve.</strong>
+    <ul>
+      <li>Non c'è registrazione e non c'è un account. Niente pubblicità, niente statistiche di utilizzo, niente profilazione.</li>
+      <li>Quando chiedi un annuncio, <strong>la foto dell'oggetto</strong> (rimpicciolita sul telefono) e il <strong>prezzo e la nota</strong> che inserisci passano dal nostro sito marketplace-apps.com all'intelligenza artificiale di Cloudflare, <strong>solo per scrivere la bozza</strong>. Non li conserviamo e Cloudflare dichiara di non conservarli e di <strong>non usarli per addestrare</strong> i modelli.</li>
+      <li><strong>Fotografa solo l'oggetto</strong>: niente persone, volti, documenti, targhe, indirizzi o altri dati personali (punto 2.2).</li>
+      <li>Gli annunci restano <strong>solo sul tuo telefono</strong> (nella versione web: solo nel tuo browser).</li>
+      <li>Per far rispettare la prova gratuita il server tiene un'impronta del dispositivo e, per un limite largo (nell'app sulle 24 ore, sul web sui 30 giorni), anche un'<strong>impronta dell'indirizzo IP</strong> conservata 30 giorni, mai l'indirizzo in chiaro (punto 2.7).</li>
+      <li>I pulsanti <strong>«Cerca su…»</strong> aprono siti di terzi (per esempio eBay o Vinted), che hanno le loro regole sulla privacy (punto 2.5).</li>
+      <li>I pagamenti avvengono su <strong>PayPal</strong>: non vediamo mai i dati della tua carta o del tuo conto.</li>
+    </ul>
+  </div>
+
+  <h2>1. Titolare del trattamento</h2>
+  <p>
+    Hubert Montero / Sviluppatore indipendente / SnapListo<br />
+    Email: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>Per qualsiasi questione relativa ai tuoi dati puoi scrivere all'indirizzo qui sopra. Non è stato nominato un responsabile della protezione dei dati (DPO).</p>
+
+  <h2>2. Quali dati tratta l'app</h2>
+
+  <h3>2.1 Foto e testo per creare l'annuncio</h3>
+  <p>Scatti la foto dell'oggetto con l'app fotocamera del telefono o la scegli con il selettore di foto di sistema: a SnapListo arriva solo la foto che scegli. Indichi il prezzo di partenza e, se vuoi, una nota. Poi:</p>
+  <ol>
+    <li><strong>Sul telefono</strong> l'app rimpicciolisce la foto (lato lungo al massimo 1024 pixel, formato JPEG) e ne <strong>toglie i metadati</strong> (EXIF), come la posizione GPS e il modello del telefono.</li>
+    <li><strong>Invio al nostro sito.</strong> L'app invia a marketplace-apps.com la foto rimpicciolita, il prezzo di partenza, la nota facoltativa (al massimo 200 caratteri), la lingua, il mercato (Paese) e la valuta scelti, l'impronta del dispositivo (punto 2.7) e, se hai Premium, il token di attivazione (punto 2.8).</li>
+    <li><strong>L'intelligenza artificiale scrive la bozza.</strong> Il sito passa foto e testo a <strong>Cloudflare Workers AI</strong>, che risponde con titolo, descrizione, categoria, condizioni e un commento al prezzo. Cloudflare dichiara che <strong>non conserva</strong> i dati in ingresso e in uscita oltre il tempo necessario a elaborare la richiesta e che <strong>non li usa per addestrare modelli di intelligenza artificiale</strong>; conserva solo dati tecnici di funzionamento (per esempio orario, dimensioni, numero di token), senza il contenuto (<a href="https://developers.cloudflare.com/workers-ai/platform/privacy/" target="_blank" rel="noopener">pagina privacy di Workers AI</a>).</li>
+    <li><strong>Nessuna copia sul server.</strong> Il nostro sito non salva la foto, il testo né la bozza: li inoltra e restituisce il risultato all'app. Per misurare i costi registra solo numeri: <strong>token usati, costo e durata</strong> di ogni richiesta, mai la foto, la nota o il testo generato. I fornitori dell'infrastruttura (Vercel e Cloudflare) possono tenere per breve tempo registri tecnici delle richieste (indirizzo IP, orario, esito), senza la foto e senza il testo.</li>
+  </ol>
+  <p>La bozza è tutta modificabile: controllala sempre prima di pubblicarla. L'intelligenza artificiale può sbagliare a riconoscere l'oggetto, il modello o le condizioni.</p>
+
+  <h3>2.2 Fotografa solo l'oggetto</h3>
+  <div class="attenzione">
+    <strong>Non fotografare persone, volti, documenti, targhe, schermi con dati, indirizzi, lettere o etichette di spedizione.</strong> Tutto quello che si vede nella foto viene inviato all'intelligenza artificiale per scrivere l'annuncio. Allo stesso modo, non scrivere nella nota dati personali tuoi o di altri (numeri di telefono, indirizzi, nomi). Se una foto li contiene, scattane un'altra o ritagliala prima di inviarla.
+  </div>
+
+  <h3>2.3 Annunci salvati sul dispositivo</h3>
+  <p>
+    Gli annunci, insieme alla foto rimpicciolita (che serve per rivederla e condividerla), ai prezzi e ai calcoli del profitto, vengono salvati <strong>solo sul telefono</strong>, nella memoria privata dell'app (nella versione web: solo nel browser che usi). <strong>Non vengono trasmessi a nessuno</strong>: non possiamo leggerli né recuperarli se li perdi. La foto resta salvata finché non cancelli l'annuncio. Li cancelli tu dall'app, o tutti insieme disinstallando l'app o cancellando i dati del sito nel browser.
+  </p>
+
+  <h3>2.4 Calcolo del profitto</h3>
+  <p>
+    Il calcolo (prezzo di vendita meno costo d'acquisto, spedizione e commissione della piattaforma) si fa sul dispositivo. L'app scarica dal nostro sito una tabella delle commissioni indicative per piattaforma e Paese: è la stessa per tutti e la richiesta non contiene dati tuoi. Puoi correggere a mano ogni commissione.
+  </p>
+
+  <h3>2.5 Pulsanti «Cerca su…»</h3>
+  <p>
+    I pulsanti «Cerca su…» aprono, nel browser o nell'app della piattaforma, la pagina di ricerca di un sito di terzi (per esempio Subito, Vinted, eBay, Amazon, Facebook Marketplace, Leboncoin, Wallapop, Kleinanzeigen, OLX) con il <strong>titolo dell'annuncio</strong> come parola da cercare. Il titolo arriva quindi a quel sito. Noi non leggiamo nulla da quei siti e non riceviamo nulla da loro. Da quel momento vale <strong>l'informativa sulla privacy del sito che apri</strong>, che può usare cookie e altri strumenti propri. Non abbiamo rapporti commerciali con queste piattaforme.
+  </p>
+
+  <h3>2.6 Condividi e copia</h3>
+  <p>Se condividi o copi l'annuncio, lo passi tu all'app che scegli (per esempio un'app di messaggi o la piattaforma di vendita). Non passa da noi.</p>
+
+  <h3>2.7 Prova gratuita e conteggio delle analisi</h3>
+  <p>
+    La prova gratuita comprende 3 analisi, <strong>una volta sola</strong> per dispositivo. Per farla rispettare, e per contare le analisi dei piani a pagamento, l'app invia un'<strong>impronta del dispositivo</strong>: un codice ricavato con una funzione di hash (SHA-256) dal nome dell'app e dall'identificativo Android (ANDROID_ID). <strong>L'identificativo Android non viene mai inviato in chiaro</strong> e l'impronta è diversa per ogni app. Nella versione web, al posto dell'impronta, l'app usa un codice casuale salvato nel browser.
+  </p>
+  <p>
+    <strong>Limite anche per indirizzo IP (app e web).</strong> Per impedire che qualcuno ripeta la prova inventando dispositivi o cancellando il codice del browser, il server conta le prove gratuite anche per indirizzo IP, sia dall'app Android sia dal web, con un limite largo: nell'app sulle 24 ore, sul web sui 30 giorni. Il server non salva l'indirizzo IP: ne salva solo un'<strong>impronta</strong> (un hash con sale), conservata per <strong>30 giorni</strong>, e il numero di analisi gratuite usate da quell'impronta. Se condividi la connessione con altre persone (per esempio in famiglia, in ufficio o su una rete pubblica), la prova gratuita usata da una di loro può risultare già usata anche per te.
+  </p>
+  <p>
+    Il server non salva l'impronta così com'è ma un suo hash con sale, e conserva: il contatore della prova gratuita, le analisi dei pacchetti legate al dispositivo, il tipo di analisi (gratuita, pacchetto o Premium), il mese e il numero di analisi fatte. Non salva la foto, il testo, la bozza né l'indirizzo IP in chiaro.
+  </p>
+  <p>
+    Se il budget mensile delle prove gratuite si esaurisce, le prove gratuite si fermano fino alla data indicata nell'app; chi ha acquistato un pacchetto o Premium continua a usare le sue analisi.
+  </p>
+
+  <h3>2.8 Premium, pacchetti di analisi e attivazione sul dispositivo</h3>
+  <p><strong>Premium.</strong> Quando attivi la chiave Premium, l'app si collega al nostro server delle licenze (<code>licenze.hubertmontero8514.workers.dev</code>, un servizio Cloudflare Workers gestito da noi) e invia la <strong>chiave di licenza</strong>, che al suo interno contiene l'indirizzo email dell'acquirente, il piano e la data di scadenza, e l'<strong>impronta del dispositivo</strong> descritta al punto 2.7. Il server risponde con un'attivazione firmata che l'app verifica sul dispositivo; l'attivazione si rinnova in automatico al massimo ogni 30 giorni, solo se il telefono è connesso.</p>
+  <p>Il server delle licenze <strong>non conserva la tua email</strong> né la chiave in chiaro. Conserva soltanto: l'hash SHA-256 della chiave; l'impronta del dispositivo; il piano; la data di attivazione e quella dell'ultimo rinnovo; se cambi telefono, la data dell'ultima sostituzione; se una chiave viene bloccata (per esempio dopo un rimborso o un abuso), l'hash di quella chiave. Il pulsante <strong>Disattiva su questo telefono</strong> cancella dal server la riga di quel dispositivo.</p>
+  <p><strong>Pacchetti di analisi.</strong> Dopo l'acquisto ricevi via email un <strong>codice</strong>, che si riscatta <strong>una sola volta</strong>. Si riscatta su marketplace-apps.com, non sul server delle licenze: il database del marketplace (Supabase, Unione europea) segna il codice come usato, ne conserva solo un'impronta e lega le analisi del pacchetto al dispositivo (all'impronta del punto 2.7; nella versione web all'identificativo salvato nel browser). Se cambi dispositivo, o se nel browser cancelli i dati del sito, le analisi rimaste si possono spostare su un altro dispositivo <strong>al massimo una volta ogni 30 giorni</strong>, riscattando di nuovo lo stesso codice sul nuovo dispositivo. Il pulsante «Disattiva su questo telefono» riguarda solo Premium e non cancella le analisi del pacchetto.</p>
+  <p>L'identificativo Android si legge solo per l'attivazione e per il conteggio delle analisi, mai per pubblicità o statistiche.</p>
+
+  <h3>2.9 Aggiornamenti dell'app</h3>
+  <p>All'avvio e dalle impostazioni l'app chiede a <code>marketplace-apps.com</code> qual è l'ultima versione e, se ce n'è una nuova, scarica il pacchetto da <code>files.marketplace-apps.com</code> (Cloudflare R2). Sei tu a confermare l'installazione. Queste richieste non contengono i tuoi annunci: il server vede solo l'indirizzo IP.</p>
+
+  <h3>2.10 Versione web</h3>
+  <ul>
+    <li>Gli annunci restano <strong>solo nel browser che usi</strong>; se cancelli i dati del sito o cambi browser, non li ritrovi.</li>
+    <li>L'identificativo casuale salvato nel browser serve al conteggio e alle analisi dei pacchetti; l'impronta dell'IP resta sul server 30 giorni (punto 2.7).</li>
+    <li>Un cookie tecnico ricorda che hai letto l'avviso iniziale.</li>
+    <li>Se attivi una chiave, il server del marketplace apre una <strong>sessione</strong> legata al browser con un cookie tecnico (<code>httpOnly</code>) e conserva l'impronta del codice di sessione, l'impronta della chiave, il piano, la scadenza e l'email contenuta nella chiave; le sessioni si cancellano 30 giorni dopo la scadenza della licenza.</li>
+  </ul>
+  <p>I dettagli sui cookie del sito sono nell'<a href="https://marketplace-apps.com/it/privacy">informativa di marketplace-apps.com</a>.</p>
+
+  <h3>2.11 Permessi Android</h3>
+  <ul>
+    <li><strong>Internet</strong>: per creare l'annuncio, attivare Premium, riscattare i codici, scaricare la tabella delle commissioni e gli aggiornamenti.</li>
+    <li><strong>Installazione degli aggiornamenti</strong>: per proporti l'installazione della nuova versione scaricata; Android ti chiede sempre conferma.</li>
+  </ul>
+  <p>L'app <strong>non chiede il permesso della fotocamera né l'accesso alla galleria</strong>: la foto la scatti con l'app fotocamera del telefono o la scegli con il selettore di foto di sistema, che passa a SnapListo solo la foto selezionata. Non chiede nemmeno i permessi di posizione, rubrica, microfono o messaggi.</p>
+
+  <h3>2.12 Cosa l'app NON fa</h3>
+  <ul>
+    <li>non conserva sui server le foto, i testi o gli annunci;</li>
+    <li>non pubblica nulla al posto tuo sulle piattaforme di vendita e non si collega ai tuoi account su quelle piattaforme;</li>
+    <li>non legge dati dai siti di terzi (niente API, niente lettura automatica delle pagine);</li>
+    <li>non raccoglie statistiche di utilizzo, non usa strumenti di analisi o pubblicità;</li>
+    <li>non crea profili e non prende decisioni automatiche che ti riguardano.</li>
+  </ul>
+
+  <h2>3. Base giuridica e finalità</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Finalità</th><th>Dati</th><th>Base giuridica (Regolamento UE 2016/679, GDPR)</th></tr>
+    <tr><td>Creare la bozza dell'annuncio con l'intelligenza artificiale, quando la chiedi</td><td>Foto rimpicciolita, prezzo, nota, lingua, mercato e valuta; impronta del dispositivo; token Premium</td><td>Esecuzione del servizio che richiedi (art. 6, par. 1, lett. b)</td></tr>
+    <tr><td>Far rispettare la prova gratuita e i limiti dei piani</td><td>Impronta del dispositivo o del codice del browser; impronta dell'indirizzo IP; mese e numero di analisi</td><td>Legittimo interesse (art. 6, par. 1, lett. f) a prevenire abusi della prova gratuita, che ha un costo reale. Usiamo solo impronte e numeri; puoi opporti (punto 6)</td></tr>
+    <tr><td>Vendita della chiave o del pacchetto e invio via email dopo il pagamento</td><td>Email, dati della transazione, Paese dell'acquirente</td><td>Contratto (art. 6, par. 1, lett. b) e obblighi fiscali (art. 6, par. 1, lett. c)</td></tr>
+    <tr><td>Attivazione di Premium e gestione dei pacchetti di analisi</td><td>Premium: hash della chiave, impronta, piano, date. Pacchetti: impronta del codice, impronta del dispositivo, analisi rimaste, date</td><td>Contratto di licenza (art. 6, par. 1, lett. b)</td></tr>
+    <tr><td>Prevenzione degli abusi delle licenze (chiavi bloccate, cambi di telefono)</td><td>Solo hash e date</td><td>Legittimo interesse (art. 6, par. 1, lett. f); puoi opporti (punto 6)</td></tr>
+    <tr><td>Aggiornamenti e sicurezza dell'app</td><td>Indirizzo IP, versione dell'app</td><td>Legittimo interesse (art. 6, par. 1, lett. f)</td></tr>
+  </table>
+  </div>
+  <p>Gli annunci salvati sul dispositivo li tratti tu: noi non li riceviamo. Non usiamo i tuoi dati per marketing o profilazione.</p>
+
+  <h2>4. Per quanto tempo restano</h2>
+  <ul>
+    <li><strong>Foto, testo e bozza inviati per l'analisi</strong>: non conservati, né da noi né da Cloudflare; servono solo per la risposta.</li>
+    <li><strong>Registro dei costi</strong> (token, costo e durata di ogni richiesta): solo numeri, mai la foto, la nota o il testo generato.</li>
+    <li><strong>Contatore della prova gratuita</strong> (impronta con sale del dispositivo o del browser e numero di analisi usate): 12 mesi dall'ultimo utilizzo.</li>
+    <li><strong>Impronta dell'indirizzo IP</strong> (app e web): 30 giorni.</li>
+    <li><strong>Pacchetti di analisi</strong> (impronta del codice, impronta del dispositivo, analisi rimaste, date; database del marketplace): finché restano analisi da usare; poi si cancellano, non prima di 90 giorni dal riscatto o dall'ultimo spostamento.</li>
+    <li><strong>Conteggi mensili dei piani a pagamento</strong>: fino a 30 giorni dopo la fine del mese a cui si riferiscono.</li>
+    <li><strong>Registri tecnici dei fornitori</strong> (IP, orario, esito, senza contenuto): per i tempi brevi previsti dai fornitori.</li>
+    <li><strong>Attivazioni sul server delle licenze</strong>: finché la licenza Premium è in uso; si cancellano subito con «Disattiva su questo telefono», o comunque dopo 90 giorni senza rinnovo. Hash delle chiavi bloccate: finché servono.</li>
+    <li><strong>Dati di acquisto</strong>: 10 anni, per obblighi fiscali.</li>
+    <li><strong>Annunci salvati sul dispositivo o nel browser</strong>: finché non li cancelli.</li>
+  </ul>
+
+  <h2>5. Destinatari e trasferimenti</h2>
+  <p>Ci serviamo di questi fornitori, che trattano i dati per nostro conto (responsabili del trattamento, art. 28 GDPR), salvo dove indicato:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (Stati Uniti): intelligenza artificiale che scrive la bozza (Workers AI), server delle licenze (Workers), file degli aggiornamenti (R2);</li>
+    <li><strong>Vercel</strong> (Stati Uniti): hosting di marketplace-apps.com e della versione web, compreso il passaggio di foto e testo verso l'intelligenza artificiale;</li>
+    <li><strong>Supabase</strong> (database nell'Unione europea, Irlanda): conteggi delle analisi, pacchetti di analisi riscattati e sessioni della versione web;</li>
+    <li><strong>Resend</strong> (Stati Uniti): invio dell'email con la chiave;</li>
+    <li><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong> (Lussemburgo): pagamento, come titolare autonomo.</li>
+  </ul>
+  <p>
+    Alcuni fornitori hanno sede negli Stati Uniti o usano infrastrutture in più Paesi, quindi i dati possono essere trattati fuori dall'Unione europea. Il trasferimento si basa sulla decisione di adeguatezza della Commissione europea per le aziende aderenti all'EU-U.S. Data Privacy Framework (decisione di esecuzione (UE) 2023/1795, art. 45 GDPR) oppure sulle clausole contrattuali tipo approvate dalla Commissione (art. 46 GDPR), secondo quanto indicato da ciascun fornitore.
+  </p>
+  <p>Le piattaforme aperte con «Cerca su…» non sono nostri fornitori: sono titolari autonomi dei dati che raccolgono quando le visiti.</p>
+  <p>Non vendiamo né cediamo i tuoi dati a nessuno.</p>
+
+  <h2>6. I tuoi diritti</h2>
+  <p>Il GDPR ti riconosce il diritto di accedere ai tuoi dati, correggerli, cancellarli, limitarne il trattamento, opporti e riceverli in un formato leggibile.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Diritto</th><th>Come</th></tr>
+    <tr><td>Accesso e rettifica (artt. 15 e 16)</td><td>Gli annunci sono tutti visibili e modificabili nell'app. Per i dati della licenza (per esempio l'email) scrivici.</td></tr>
+    <tr><td>Cancellazione (art. 17)</td><td>Elimina gli annunci dall'app o disinstallala. Per la licenza usa «Disattiva su questo telefono» o scrivici.</td></tr>
+    <tr><td>Limitazione e opposizione (artt. 18 e 21)</td><td>Scrivici per i trattamenti basati sul legittimo interesse.</td></tr>
+    <tr><td>Portabilità (art. 20)</td><td>Puoi copiare o condividere ogni annuncio; per i dati della licenza scrivici.</td></tr>
+    <tr><td>Reclamo</td><td>Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>) o l'autorità del Paese in cui risiedi.</td></tr>
+  </table>
+  </div>
+  <p>Foto e testi non restano sui nostri server: non possiamo quindi mostrarteli né cancellarli, perché non li abbiamo.</p>
+
+  <h2>7. Sicurezza</h2>
+  <p>Tutte le comunicazioni avvengono in HTTPS. I dati sono salvati nella memoria privata dell'app, che Android isola dalle altre app. Ti consigliamo di tenere attivo il blocco schermo e aggiornato il sistema operativo.</p>
+
+  <h2>8. Minori</h2>
+  <p>L'app è pensata per persone maggiorenni che vendono oggetti propri e non è destinata a minori di 18 anni.</p>
+
+  <h2>9. Commento al prezzo e stime</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">Il commento al prezzo e la «stima di nicchia» sono scritti dall'intelligenza artificiale a partire dalla foto e dal prezzo che hai indicato. <strong>Non si basano su vendite reali né su dati di mercato verificati</strong>, non leggono i prezzi delle piattaforme e possono essere sbagliati o non aggiornati.</p>
+    <p style="margin-bottom:0">Le commissioni delle piattaforme sono indicative e possono cambiare: controlla sempre prezzi e commissioni sulla piattaforma (anche con «Cerca su…») prima di decidere. Il prezzo lo decidi tu.</p>
+  </div>
+
+  <h2>10. Distribuzione e pagamento</h2>
+  <p>
+    SnapListo è distribuita solo tramite <a href="https://marketplace-apps.com">marketplace-apps.com</a>, non tramite Google Play; l'APK è firmato digitalmente. Android può mostrare un avviso durante l'installazione: è normale per le app installate fuori dal Play Store.
+  </p>
+  <p>
+    Pacchetti e Premium si acquistano sul sito con un pagamento una tantum, <strong>senza rinnovo automatico</strong>. Il pagamento avviene su una pagina di PayPal: i dati di pagamento li dai a PayPal, non a noi, e <strong>non vediamo mai i dati della tua carta o del tuo conto</strong> (<a href="https://www.paypal.com/privacy">informativa di PayPal</a>). Da PayPal riceviamo l'email, l'importo, la data e il Paese dell'acquirente, che servono per inviarti la chiave, per l'assistenza e per gli obblighi fiscali.
+  </p>
+
+  <h2>11. Modifiche a questa informativa</h2>
+  <p>Se cambieremo l'informativa in modo sostanziale, per esempio inviando altri dati o usando un altro fornitore di intelligenza artificiale, te lo mostreremo nell'app. La data in cima indica l'ultimo aggiornamento. In caso di differenze tra le lingue, fa fede la versione italiana.</p>
+
+  <h2>12. Contatti</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a> — rispondiamo entro un mese, come previsto dall'art. 12 GDPR.</p>
+
+</section>
+
+<section class="lingua" id="en" lang="en">
+
+  <h1>Privacy policy — SnapListo</h1>
+  <div class="meta">Last updated: 08/11/2026 &nbsp;·&nbsp; Version: 1.0 (SnapListo app 1.0.0 and later, Android and web)</div>
+
+  <div class="summary">
+    <strong>In short.</strong>
+    <ul>
+      <li>There is no sign-up and no account. No ads, no usage analytics, no profiling.</li>
+      <li>When you ask for a listing, <strong>the photo of the item</strong> (made smaller on your phone) and the <strong>price and note</strong> you enter go through our website marketplace-apps.com to Cloudflare's artificial intelligence, <strong>only to write the draft</strong>. We do not keep them, and Cloudflare states that it does not keep them and does <strong>not use them to train</strong> its models.</li>
+      <li><strong>Photograph only the item</strong>: no people, faces, documents, number plates, addresses or other personal data (section 2.2).</li>
+      <li>Your listings stay <strong>only on your phone</strong> (in the web version: only in your browser).</li>
+      <li>To enforce the free trial the server keeps a fingerprint of the device and, for a wide limit (24 hours in the app, 30 days on the web), also a <strong>fingerprint of the IP address</strong> kept for 30 days, never the address itself (section 2.7).</li>
+      <li>The <strong>"Search on…"</strong> buttons open third-party sites (for example eBay or Vinted), which have their own privacy rules (section 2.5).</li>
+      <li>Payments are made on <strong>PayPal</strong>: we never see your card or account details.</li>
+    </ul>
+  </div>
+
+  <h2>1. Data controller</h2>
+  <p>
+    Hubert Montero / Independent developer / SnapListo (Italy)<br />
+    Email: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>You can write to the address above about anything concerning your data. No data protection officer (DPO) has been appointed.</p>
+
+  <h2>2. What data the app processes</h2>
+
+  <h3>2.1 Photo and text used to create the listing</h3>
+  <p>You take the photo of the item with your phone's camera app or pick it with the system photo picker: SnapListo receives only the photo you choose. You enter a starting price and, if you like, a note. Then:</p>
+  <ol>
+    <li><strong>On your phone</strong> the app makes the photo smaller (longest side at most 1024 pixels, JPEG format) and <strong>removes its metadata</strong> (EXIF), such as GPS location and phone model.</li>
+    <li><strong>Sending to our website.</strong> The app sends marketplace-apps.com the reduced photo, the starting price, the optional note (at most 200 characters), the language, the market (country) and currency you chose, the device fingerprint (section 2.7) and, if you have Premium, the activation token (section 2.8).</li>
+    <li><strong>The artificial intelligence writes the draft.</strong> The website passes the photo and text to <strong>Cloudflare Workers AI</strong>, which replies with a title, description, category, condition and a comment on the price. Cloudflare states that it <strong>does not retain</strong> inputs and outputs beyond the time needed to process the request and that it <strong>does not use them to train AI models</strong>; it keeps only operational data (for example time, sizes, number of tokens), without the content (<a href="https://developers.cloudflare.com/workers-ai/platform/privacy/" target="_blank" rel="noopener">Workers AI privacy page</a>).</li>
+    <li><strong>No copy on the server.</strong> Our website does not save the photo, the text or the draft: it forwards them and returns the result to the app. To measure costs it records only numbers: <strong>tokens used, cost and duration</strong> of each request, never the photo, the note or the generated text. Infrastructure providers (Vercel and Cloudflare) may briefly keep technical request logs (IP address, time, outcome), without the photo or the text.</li>
+  </ol>
+  <p>The draft is fully editable: always check it before publishing. The AI can get the item, model or condition wrong.</p>
+
+  <h3>2.2 Photograph only the item</h3>
+  <div class="attenzione">
+    <strong>Do not photograph people, faces, documents, number plates, screens showing data, addresses, letters or shipping labels.</strong> Everything visible in the photo is sent to the AI to write the listing. Likewise, do not put personal data about yourself or others in the note (phone numbers, addresses, names). If a photo contains any, take another one or crop it before sending.
+  </div>
+
+  <h3>2.3 Listings saved on your device</h3>
+  <p>
+    Listings, together with the reduced photo (kept so you can review and share it), prices and profit calculations, are saved <strong>only on your phone</strong>, in the app's private storage (in the web version: only in the browser you use). <strong>They are not sent to anyone</strong>: we cannot read them or recover them if you lose them. The photo stays until you delete the listing. You delete them from the app, or all at once by uninstalling the app or clearing the site data in your browser.
+  </p>
+
+  <h3>2.4 Profit calculation</h3>
+  <p>
+    The calculation (selling price minus purchase cost, shipping and platform fee) is done on your device. The app downloads from our website a table of indicative fees per platform and country: it is the same for everyone and the request contains no data about you. You can change any fee by hand.
+  </p>
+
+  <h3>2.5 "Search on…" buttons</h3>
+  <p>
+    The "Search on…" buttons open, in your browser or in the platform's app, the search page of a third-party site (for example eBay, Vinted, Amazon, Facebook Marketplace, Subito, Leboncoin, Wallapop, Kleinanzeigen, OLX) with the <strong>listing title</strong> as the search term. The title therefore reaches that site. We read nothing from those sites and receive nothing from them. From that moment <strong>the privacy policy of the site you open</strong> applies, and it may use its own cookies and tools. We have no business relationship with these platforms.
+  </p>
+
+  <h3>2.6 Share and copy</h3>
+  <p>If you share or copy a listing, you pass it to the app you choose (for example a messaging app or the selling platform). It does not go through us.</p>
+
+  <h3>2.7 Free trial and analysis count</h3>
+  <p>
+    The free trial includes 3 analyses, <strong>only once</strong> per device. To enforce it, and to count the analyses of paid plans, the app sends a <strong>device fingerprint</strong>: a code derived with a hash function (SHA-256) from the app name and the Android identifier (ANDROID_ID). <strong>The Android identifier is never sent in clear</strong> and the fingerprint is different for each app. In the web version, instead of the fingerprint, the app uses a random code saved in the browser.
+  </p>
+  <p>
+    <strong>Limit by IP address too (app and web).</strong> To stop people repeating the trial by inventing devices or deleting the browser code, the server also counts free trials per IP address, both from the Android app and from the web, with a wide limit: 24 hours in the app, 30 days on the web. The server does not save the IP address: it saves only a <strong>fingerprint</strong> of it (a salted hash), kept for <strong>30 days</strong>, and the number of free analyses used by that fingerprint. If you share your connection with other people (for example at home, at work or on a public network), a free trial used by one of them may appear as already used for you too.
+  </p>
+  <p>
+    The server does not store the fingerprint as it is but a salted hash of it, and keeps: the free-trial counter, the pack analyses tied to the device, the type of analysis (free, pack or Premium), the month and the number of analyses made. It does not save the photo, the text, the draft or the IP address in clear.
+  </p>
+  <p>
+    If the monthly budget for free trials runs out, free trials stop until the date shown in the app; anyone who bought a pack or Premium keeps using their analyses.
+  </p>
+
+  <h3>2.8 Premium, analysis packs and activation on the device</h3>
+  <p><strong>Premium.</strong> When you activate the Premium key, the app connects to our licence server (<code>licenze.hubertmontero8514.workers.dev</code>, a Cloudflare Workers service run by us) and sends the <strong>licence key</strong>, which contains the buyer's email address, the plan and the expiry date, and the <strong>device fingerprint</strong> described in section 2.7. The server replies with a signed activation that the app checks on the device; the activation is renewed automatically at most every 30 days, only when the phone is online.</p>
+  <p>The licence server <strong>does not keep your email</strong> or the key in clear. It keeps only: the SHA-256 hash of the key; the device fingerprint; the plan; the activation date and the date of the last renewal; if you change phone, the date of the last replacement; if a key is blocked (for example after a refund or abuse), the hash of that key. The <strong>Deactivate on this phone</strong> button deletes that device's row from the server.</p>
+  <p><strong>Analysis packs.</strong> After purchase you receive a <strong>code</strong> by email, which can be redeemed <strong>only once</strong>. It is redeemed on marketplace-apps.com, not on the licence server: the marketplace database (Supabase, European Union) marks the code as used, keeps only a fingerprint of it, and ties the pack's analyses to the device (to the fingerprint in section 2.7; in the web version to the identifier saved in the browser). If you change device, or clear the site data in your browser, the remaining analyses can be moved to another device <strong>at most once every 30 days</strong> by redeeming the same code again on the new device. The "Deactivate on this phone" button concerns Premium only and does not delete pack analyses.</p>
+  <p>The Android identifier is read only for activation and for counting analyses, never for advertising or analytics.</p>
+
+  <h3>2.9 App updates</h3>
+  <p>At start-up and from the settings the app asks <code>marketplace-apps.com</code> for the latest version and, if there is a new one, downloads the package from <code>files.marketplace-apps.com</code> (Cloudflare R2). You confirm the installation. These requests contain none of your listings: the server only sees the IP address.</p>
+
+  <h3>2.10 Web version</h3>
+  <ul>
+    <li>Listings stay <strong>only in the browser you use</strong>; if you clear the site data or change browser, you will not find them.</li>
+    <li>The random identifier saved in the browser is used for counting and for pack analyses; the IP fingerprint stays on the server for 30 days (section 2.7).</li>
+    <li>A technical cookie remembers that you have read the initial notice.</li>
+    <li>If you activate a key, the marketplace server opens a <strong>session</strong> tied to the browser with a technical cookie (<code>httpOnly</code>) and keeps the fingerprint of the session code, the fingerprint of the key, the plan, the expiry and the email contained in the key; sessions are deleted 30 days after the licence expires.</li>
+  </ul>
+  <p>Details on the site's cookies are in the <a href="https://marketplace-apps.com/en/privacy">marketplace-apps.com privacy policy</a>.</p>
+
+  <h3>2.11 Android permissions</h3>
+  <ul>
+    <li><strong>Internet</strong>: to create the listing, activate Premium, redeem codes, download the fee table and updates.</li>
+    <li><strong>Install updates</strong>: to offer you the installation of the downloaded new version; Android always asks you to confirm.</li>
+  </ul>
+  <p>The app <strong>does not ask for camera or gallery permissions</strong>: you take the photo with your phone's camera app or pick it with the system photo picker, which passes only the selected photo to SnapListo. It does not ask for location, contacts, microphone or messages permissions either.</p>
+
+  <h3>2.12 What the app does NOT do</h3>
+  <ul>
+    <li>it does not keep photos, texts or listings on servers;</li>
+    <li>it does not publish anything on selling platforms on your behalf and does not connect to your accounts there;</li>
+    <li>it does not read data from third-party sites (no APIs, no automatic reading of pages);</li>
+    <li>it does not collect usage statistics and uses no analytics or advertising tools;</li>
+    <li>it does not build profiles or take automated decisions about you.</li>
+  </ul>
+
+  <h2>3. Legal basis and purposes</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Purpose</th><th>Data</th><th>Legal basis (Regulation (EU) 2016/679, GDPR)</th></tr>
+    <tr><td>Creating the listing draft with AI, when you ask for it</td><td>Reduced photo, price, note, language, market and currency; device fingerprint; Premium token</td><td>Performance of the service you request (Art. 6(1)(b))</td></tr>
+    <tr><td>Enforcing the free trial and plan limits</td><td>Fingerprint of the device or browser code; fingerprint of the IP address; month and number of analyses</td><td>Legitimate interest (Art. 6(1)(f)) in preventing abuse of the free trial, which has a real cost. We use only fingerprints and numbers; you can object (section 6)</td></tr>
+    <tr><td>Selling the key or pack and emailing it after payment</td><td>Email, transaction data, buyer's country</td><td>Contract (Art. 6(1)(b)) and tax obligations (Art. 6(1)(c))</td></tr>
+    <tr><td>Premium activation and management of analysis packs</td><td>Premium: key hash, fingerprint, plan, dates. Packs: code fingerprint, device fingerprint, remaining analyses, dates</td><td>Licence contract (Art. 6(1)(b))</td></tr>
+    <tr><td>Preventing licence abuse (blocked keys, phone changes)</td><td>Hashes and dates only</td><td>Legitimate interest (Art. 6(1)(f)); you can object (section 6)</td></tr>
+    <tr><td>App updates and security</td><td>IP address, app version</td><td>Legitimate interest (Art. 6(1)(f))</td></tr>
+  </table>
+  </div>
+  <p>The listings saved on your device are processed by you: we do not receive them. We do not use your data for marketing or profiling.</p>
+
+  <h2>4. How long data is kept</h2>
+  <ul>
+    <li><strong>Photo, text and draft sent for analysis</strong>: not kept, neither by us nor by Cloudflare; used only for the reply.</li>
+    <li><strong>Cost log</strong> (tokens, cost and duration of each request): numbers only, never the photo, the note or the generated text.</li>
+    <li><strong>Free-trial counter</strong> (salted fingerprint of the device or browser and number of analyses used): 12 months from the last use.</li>
+    <li><strong>IP address fingerprint</strong> (app and web): 30 days.</li>
+    <li><strong>Analysis packs</strong> (code fingerprint, device fingerprint, remaining analyses, dates; marketplace database): as long as analyses remain to be used; then deleted, but not before 90 days from redemption or from the last move.</li>
+    <li><strong>Monthly counts of paid plans</strong>: up to 30 days after the end of the month they refer to.</li>
+    <li><strong>Providers' technical logs</strong> (IP, time, outcome, no content): for the short periods set by the providers.</li>
+    <li><strong>Activations on the licence server</strong>: while the Premium licence is in use; deleted at once with "Deactivate on this phone", or in any case after 90 days without renewal. Hashes of blocked keys: as long as needed.</li>
+    <li><strong>Purchase data</strong>: 10 years, for tax obligations.</li>
+    <li><strong>Listings saved on the device or in the browser</strong>: until you delete them.</li>
+  </ul>
+
+  <h2>5. Recipients and transfers</h2>
+  <p>We use these providers, which process data on our behalf (processors, Art. 28 GDPR), unless stated otherwise:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (United States): AI that writes the draft (Workers AI), licence server (Workers), update files (R2);</li>
+    <li><strong>Vercel</strong> (United States): hosting of marketplace-apps.com and of the web version, including passing the photo and text to the AI;</li>
+    <li><strong>Supabase</strong> (database in the European Union, Ireland): analysis counts, redeemed analysis packs and web version sessions;</li>
+    <li><strong>Resend</strong> (United States): sending the email with the key;</li>
+    <li><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong> (Luxembourg): payment, as an independent controller.</li>
+  </ul>
+  <p>
+    Some providers are based in the United States or use infrastructure in several countries, so data may be processed outside the European Union. The transfer is based on the European Commission's adequacy decision for companies certified under the EU-U.S. Data Privacy Framework (Implementing Decision (EU) 2023/1795, Art. 45 GDPR) or on the standard contractual clauses approved by the Commission (Art. 46 GDPR), as indicated by each provider.
+  </p>
+  <p>The platforms opened with "Search on…" are not our providers: they are independent controllers of the data they collect when you visit them.</p>
+  <p>We do not sell or hand over your data to anyone.</p>
+
+  <h2>6. Your rights</h2>
+  <p>The GDPR gives you the right to access your data, correct it, delete it, restrict its processing, object, and receive it in a readable format.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Right</th><th>How</th></tr>
+    <tr><td>Access and rectification (Arts. 15 and 16)</td><td>All listings are visible and editable in the app. For licence data (for example the email) write to us.</td></tr>
+    <tr><td>Erasure (Art. 17)</td><td>Delete listings from the app or uninstall it. For the licence use "Deactivate on this phone" or write to us.</td></tr>
+    <tr><td>Restriction and objection (Arts. 18 and 21)</td><td>Write to us about processing based on legitimate interest.</td></tr>
+    <tr><td>Portability (Art. 20)</td><td>You can copy or share every listing; for licence data write to us.</td></tr>
+    <tr><td>Complaint</td><td>Italian Data Protection Authority, Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>), or the authority of the country where you live.</td></tr>
+  </table>
+  </div>
+  <p>Photos and texts do not stay on our servers: we cannot show or delete them because we do not have them.</p>
+
+  <h2>7. Security</h2>
+  <p>All communications use HTTPS. Data is saved in the app's private storage, which Android isolates from other apps. We recommend keeping your screen lock on and your operating system up to date.</p>
+
+  <h2>8. Minors</h2>
+  <p>The app is designed for adults selling their own items and is not intended for people under 18.</p>
+
+  <h2>9. Price comment and estimates</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">The price comment and the "niche estimate" are written by the AI from the photo and the price you entered. <strong>They are not based on real sales or verified market data</strong>, they do not read platform prices, and they may be wrong or out of date.</p>
+    <p style="margin-bottom:0">Platform fees are indicative and may change: always check prices and fees on the platform (also with "Search on…") before deciding. You set the price.</p>
+  </div>
+
+  <h2>10. Distribution and payment</h2>
+  <p>
+    SnapListo is distributed only through <a href="https://marketplace-apps.com">marketplace-apps.com</a>, not through Google Play; the APK is digitally signed. Android may show a warning during installation: this is normal for apps installed outside the Play Store.
+  </p>
+  <p>
+    Packs and Premium are bought on the website with a one-time payment, <strong>with no automatic renewal</strong>. Payment takes place on a PayPal page: you give your payment details to PayPal, not to us, and <strong>we never see your card or account details</strong> (<a href="https://www.paypal.com/privacy">PayPal privacy statement</a>). From PayPal we receive the buyer's email, amount, date and country, which we need to send you the key, for support and for tax obligations.
+  </p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>If we change this policy substantially, for example by sending other data or using another AI provider, we will show it to you in the app. The date at the top shows the last update. If the language versions differ, the Italian version prevails.</p>
+
+  <h2>12. Contact</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a> — we reply within one month, as required by Art. 12 GDPR.</p>
+
+</section>
+
+<section class="lingua" id="es" lang="es">
+
+  <h1>Política de privacidad — SnapListo</h1>
+  <div class="meta">Última actualización: 08/11/2026 &nbsp;·&nbsp; Versión: 1.0 (app SnapListo 1.0.0 y posteriores, Android y web)</div>
+
+  <div class="summary">
+    <strong>En resumen.</strong>
+    <ul>
+      <li>No hay registro ni cuenta. Sin publicidad, sin estadísticas de uso, sin elaboración de perfiles.</li>
+      <li>Cuando pides un anuncio, <strong>la foto del objeto</strong> (reducida en el teléfono) y el <strong>precio y la nota</strong> que introduces pasan por nuestra web marketplace-apps.com a la inteligencia artificial de Cloudflare, <strong>solo para redactar el borrador</strong>. No los conservamos, y Cloudflare declara que no los conserva y que <strong>no los usa para entrenar</strong> sus modelos.</li>
+      <li><strong>Fotografía solo el objeto</strong>: nada de personas, caras, documentos, matrículas, direcciones u otros datos personales (punto 2.2).</li>
+      <li>Los anuncios se quedan <strong>solo en tu teléfono</strong> (en la versión web: solo en tu navegador).</li>
+      <li>Para hacer respetar la prueba gratuita, el servidor guarda una huella del dispositivo y, para un límite amplio (24 horas en la app, 30 días en la web), también una <strong>huella de la dirección IP</strong> conservada 30 días, nunca la dirección en claro (punto 2.7).</li>
+      <li>Los botones <strong>«Buscar en…»</strong> abren sitios de terceros (por ejemplo eBay o Vinted), que tienen sus propias normas de privacidad (punto 2.5).</li>
+      <li>Los pagos se hacen en <strong>PayPal</strong>: nunca vemos los datos de tu tarjeta o de tu cuenta.</li>
+    </ul>
+  </div>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>
+    Hubert Montero / Desarrollador independiente / SnapListo (Italia)<br />
+    Email: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>Puedes escribir a la dirección anterior para cualquier cuestión sobre tus datos. No se ha designado un delegado de protección de datos (DPO).</p>
+
+  <h2>2. Qué datos trata la app</h2>
+
+  <h3>2.1 Foto y texto para crear el anuncio</h3>
+  <p>Haces la foto del objeto con la app de cámara del teléfono o la eliges con el selector de fotos del sistema: a SnapListo solo le llega la foto que eliges. Indicas el precio de partida y, si quieres, una nota. Después:</p>
+  <ol>
+    <li><strong>En el teléfono</strong> la app reduce la foto (lado largo de 1024 píxeles como máximo, formato JPEG) y <strong>elimina sus metadatos</strong> (EXIF), como la ubicación GPS y el modelo del teléfono.</li>
+    <li><strong>Envío a nuestra web.</strong> La app envía a marketplace-apps.com la foto reducida, el precio de partida, la nota opcional (200 caracteres como máximo), el idioma, el mercado (país) y la moneda elegidos, la huella del dispositivo (punto 2.7) y, si tienes Premium, el token de activación (punto 2.8).</li>
+    <li><strong>La inteligencia artificial redacta el borrador.</strong> La web pasa la foto y el texto a <strong>Cloudflare Workers AI</strong>, que responde con título, descripción, categoría, estado y un comentario sobre el precio. Cloudflare declara que <strong>no conserva</strong> los datos de entrada y salida más allá del tiempo necesario para procesar la solicitud y que <strong>no los usa para entrenar modelos de inteligencia artificial</strong>; solo conserva datos técnicos de funcionamiento (por ejemplo hora, tamaños, número de tokens), sin el contenido (<a href="https://developers.cloudflare.com/workers-ai/platform/privacy/" target="_blank" rel="noopener">página de privacidad de Workers AI</a>).</li>
+    <li><strong>Ninguna copia en el servidor.</strong> Nuestra web no guarda la foto, el texto ni el borrador: los reenvía y devuelve el resultado a la app. Para medir los costes registra solo números: <strong>tokens usados, coste y duración</strong> de cada solicitud, nunca la foto, la nota ni el texto generado. Los proveedores de infraestructura (Vercel y Cloudflare) pueden conservar durante poco tiempo registros técnicos de las solicitudes (dirección IP, hora, resultado), sin la foto ni el texto.</li>
+  </ol>
+  <p>El borrador se puede modificar por completo: revísalo siempre antes de publicarlo. La inteligencia artificial puede equivocarse al reconocer el objeto, el modelo o el estado.</p>
+
+  <h3>2.2 Fotografía solo el objeto</h3>
+  <div class="attenzione">
+    <strong>No fotografíes personas, caras, documentos, matrículas, pantallas con datos, direcciones, cartas ni etiquetas de envío.</strong> Todo lo que se ve en la foto se envía a la inteligencia artificial para redactar el anuncio. Del mismo modo, no escribas en la nota datos personales tuyos o de otras personas (teléfonos, direcciones, nombres). Si una foto los contiene, haz otra o recórtala antes de enviarla.
+  </div>
+
+  <h3>2.3 Anuncios guardados en el dispositivo</h3>
+  <p>
+    Los anuncios, junto con la foto reducida (para volver a verla y compartirla), los precios y los cálculos de beneficio, se guardan <strong>solo en el teléfono</strong>, en la memoria privada de la app (en la versión web: solo en el navegador que usas). <strong>No se envían a nadie</strong>: no podemos leerlos ni recuperarlos si los pierdes. La foto se queda hasta que borras el anuncio. Los borras tú desde la app, o todos a la vez desinstalando la app o borrando los datos del sitio en el navegador.
+  </p>
+
+  <h3>2.4 Cálculo del beneficio</h3>
+  <p>
+    El cálculo (precio de venta menos coste de compra, envío y comisión de la plataforma) se hace en el dispositivo. La app descarga de nuestra web una tabla de comisiones orientativas por plataforma y país: es la misma para todos y la solicitud no contiene datos tuyos. Puedes corregir a mano cada comisión.
+  </p>
+
+  <h3>2.5 Botones «Buscar en…»</h3>
+  <p>
+    Los botones «Buscar en…» abren, en el navegador o en la app de la plataforma, la página de búsqueda de un sitio de terceros (por ejemplo Wallapop, Vinted, eBay, Amazon, Facebook Marketplace, Subito, Leboncoin, Kleinanzeigen, OLX) con el <strong>título del anuncio</strong> como término de búsqueda. Por lo tanto, el título llega a ese sitio. Nosotros no leemos nada de esos sitios ni recibimos nada de ellos. A partir de ese momento se aplica <strong>la política de privacidad del sitio que abres</strong>, que puede usar sus propias cookies y herramientas. No tenemos relaciones comerciales con estas plataformas.
+  </p>
+
+  <h3>2.6 Compartir y copiar</h3>
+  <p>Si compartes o copias el anuncio, lo pasas tú a la app que eliges (por ejemplo una app de mensajería o la plataforma de venta). No pasa por nosotros.</p>
+
+  <h3>2.7 Prueba gratuita y recuento de análisis</h3>
+  <p>
+    La prueba gratuita incluye 3 análisis, <strong>una sola vez</strong> por dispositivo. Para hacerla respetar, y para contar los análisis de los planes de pago, la app envía una <strong>huella del dispositivo</strong>: un código obtenido con una función hash (SHA-256) a partir del nombre de la app y del identificador de Android (ANDROID_ID). <strong>El identificador de Android nunca se envía en claro</strong> y la huella es distinta para cada app. En la versión web, en lugar de la huella, la app usa un código aleatorio guardado en el navegador.
+  </p>
+  <p>
+    <strong>Límite también por dirección IP (app y web).</strong> Para impedir que alguien repita la prueba inventando dispositivos o borrando el código del navegador, el servidor también cuenta las pruebas gratuitas por dirección IP, tanto desde la app Android como desde la web, con un límite amplio: 24 horas en la app, 30 días en la web. El servidor no guarda la dirección IP: solo guarda una <strong>huella</strong> de ella (un hash con sal), conservada <strong>30 días</strong>, y el número de análisis gratuitos usados por esa huella. Si compartes la conexión con otras personas (por ejemplo en casa, en la oficina o en una red pública), la prueba gratuita usada por una de ellas puede aparecer como ya usada también para ti.
+  </p>
+  <p>
+    El servidor no guarda la huella tal cual, sino un hash con sal, y conserva: el contador de la prueba gratuita, los análisis de los paquetes vinculados al dispositivo, el tipo de análisis (gratuito, paquete o Premium), el mes y el número de análisis realizados. No guarda la foto, el texto, el borrador ni la dirección IP en claro.
+  </p>
+  <p>
+    Si se agota el presupuesto mensual de las pruebas gratuitas, estas se detienen hasta la fecha indicada en la app; quien haya comprado un paquete o Premium sigue usando sus análisis.
+  </p>
+
+  <h3>2.8 Premium, paquetes de análisis y activación en el dispositivo</h3>
+  <p><strong>Premium.</strong> Cuando activas la clave Premium, la app se conecta a nuestro servidor de licencias (<code>licenze.hubertmontero8514.workers.dev</code>, un servicio Cloudflare Workers gestionado por nosotros) y envía la <strong>clave de licencia</strong>, que contiene la dirección de email del comprador, el plan y la fecha de caducidad, y la <strong>huella del dispositivo</strong> descrita en el punto 2.7. El servidor responde con una activación firmada que la app verifica en el dispositivo; la activación se renueva automáticamente como máximo cada 30 días, solo si el teléfono está conectado.</p>
+  <p>El servidor de licencias <strong>no conserva tu email</strong> ni la clave en claro. Conserva solo: el hash SHA-256 de la clave; la huella del dispositivo; el plan; la fecha de activación y la de la última renovación; si cambias de teléfono, la fecha de la última sustitución; si se bloquea una clave (por ejemplo tras un reembolso o un abuso), el hash de esa clave. El botón <strong>Desactivar en este teléfono</strong> borra del servidor la fila de ese dispositivo.</p>
+  <p><strong>Paquetes de análisis.</strong> Tras la compra recibes por email un <strong>código</strong>, que se canjea <strong>una sola vez</strong>. Se canjea en marketplace-apps.com, no en el servidor de licencias: la base de datos del marketplace (Supabase, Unión Europea) marca el código como usado, guarda solo una huella de él y vincula los análisis del paquete al dispositivo (a la huella del punto 2.7; en la versión web, al identificador guardado en el navegador). Si cambias de dispositivo, o borras los datos del sitio en el navegador, los análisis que queden se pueden trasladar a otro dispositivo <strong>como máximo una vez cada 30 días</strong>, canjeando de nuevo el mismo código en el nuevo dispositivo. El botón «Desactivar en este teléfono» solo afecta a Premium y no borra los análisis del paquete.</p>
+  <p>El identificador de Android solo se lee para la activación y el recuento de análisis, nunca para publicidad o estadísticas.</p>
+
+  <h3>2.9 Actualizaciones de la app</h3>
+  <p>Al arrancar y desde los ajustes, la app pregunta a <code>marketplace-apps.com</code> cuál es la última versión y, si hay una nueva, descarga el paquete desde <code>files.marketplace-apps.com</code> (Cloudflare R2). Eres tú quien confirma la instalación. Estas solicitudes no contienen tus anuncios: el servidor solo ve la dirección IP.</p>
+
+  <h3>2.10 Versión web</h3>
+  <ul>
+    <li>Los anuncios se quedan <strong>solo en el navegador que usas</strong>; si borras los datos del sitio o cambias de navegador, no los encontrarás.</li>
+    <li>El identificador aleatorio guardado en el navegador sirve para el recuento y para los análisis de los paquetes; la huella de la IP se queda en el servidor 30 días (punto 2.7).</li>
+    <li>Una cookie técnica recuerda que has leído el aviso inicial.</li>
+    <li>Si activas una clave, el servidor del marketplace abre una <strong>sesión</strong> vinculada al navegador con una cookie técnica (<code>httpOnly</code>) y conserva la huella del código de sesión, la huella de la clave, el plan, la caducidad y el email contenido en la clave; las sesiones se borran 30 días después de la caducidad de la licencia.</li>
+  </ul>
+  <p>Los detalles sobre las cookies del sitio están en la <a href="https://marketplace-apps.com/es/privacy">política de privacidad de marketplace-apps.com</a>.</p>
+
+  <h3>2.11 Permisos de Android</h3>
+  <ul>
+    <li><strong>Internet</strong>: para crear el anuncio, activar Premium, canjear códigos, descargar la tabla de comisiones y las actualizaciones.</li>
+    <li><strong>Instalación de actualizaciones</strong>: para proponerte instalar la nueva versión descargada; Android siempre te pide confirmación.</li>
+  </ul>
+  <p>La app <strong>no pide permiso de cámara ni de acceso a la galería</strong>: haces la foto con la app de cámara del teléfono o la eliges con el selector de fotos del sistema, que pasa a SnapListo solo la foto seleccionada. Tampoco pide permisos de ubicación, contactos, micrófono ni mensajes.</p>
+
+  <h3>2.12 Lo que la app NO hace</h3>
+  <ul>
+    <li>no conserva en servidores las fotos, los textos ni los anuncios;</li>
+    <li>no publica nada en tu nombre en las plataformas de venta ni se conecta a tus cuentas en ellas;</li>
+    <li>no lee datos de sitios de terceros (sin API, sin lectura automática de páginas);</li>
+    <li>no recopila estadísticas de uso ni usa herramientas de análisis o publicidad;</li>
+    <li>no crea perfiles ni toma decisiones automatizadas sobre ti.</li>
+  </ul>
+
+  <h2>3. Base jurídica y finalidades</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Finalidad</th><th>Datos</th><th>Base jurídica (Reglamento (UE) 2016/679, RGPD)</th></tr>
+    <tr><td>Crear el borrador del anuncio con inteligencia artificial, cuando lo pides</td><td>Foto reducida, precio, nota, idioma, mercado y moneda; huella del dispositivo; token Premium</td><td>Ejecución del servicio que solicitas (art. 6.1.b)</td></tr>
+    <tr><td>Hacer respetar la prueba gratuita y los límites de los planes</td><td>Huella del dispositivo o del código del navegador; huella de la dirección IP; mes y número de análisis</td><td>Interés legítimo (art. 6.1.f) en evitar abusos de la prueba gratuita, que tiene un coste real. Solo usamos huellas y números; puedes oponerte (punto 6)</td></tr>
+    <tr><td>Venta de la clave o del paquete y envío por email tras el pago</td><td>Email, datos de la transacción, país del comprador</td><td>Contrato (art. 6.1.b) y obligaciones fiscales (art. 6.1.c)</td></tr>
+    <tr><td>Activación de Premium y gestión de los paquetes de análisis</td><td>Premium: hash de la clave, huella, plan, fechas. Paquetes: huella del código, huella del dispositivo, análisis restantes, fechas</td><td>Contrato de licencia (art. 6.1.b)</td></tr>
+    <tr><td>Prevención de abusos de las licencias (claves bloqueadas, cambios de teléfono)</td><td>Solo hashes y fechas</td><td>Interés legítimo (art. 6.1.f); puedes oponerte (punto 6)</td></tr>
+    <tr><td>Actualizaciones y seguridad de la app</td><td>Dirección IP, versión de la app</td><td>Interés legítimo (art. 6.1.f)</td></tr>
+  </table>
+  </div>
+  <p>Los anuncios guardados en el dispositivo los tratas tú: nosotros no los recibimos. No usamos tus datos para marketing ni para elaborar perfiles.</p>
+
+  <h2>4. Cuánto tiempo se conservan</h2>
+  <ul>
+    <li><strong>Foto, texto y borrador enviados para el análisis</strong>: no se conservan, ni por nosotros ni por Cloudflare; solo sirven para la respuesta.</li>
+    <li><strong>Registro de costes</strong> (tokens, coste y duración de cada solicitud): solo números, nunca la foto, la nota ni el texto generado.</li>
+    <li><strong>Contador de la prueba gratuita</strong> (huella con sal del dispositivo o del navegador y número de análisis usados): 12 meses desde el último uso.</li>
+    <li><strong>Huella de la dirección IP</strong> (app y web): 30 días.</li>
+    <li><strong>Paquetes de análisis</strong> (huella del código, huella del dispositivo, análisis restantes, fechas; base de datos del marketplace): mientras queden análisis por usar; después se borran, pero no antes de 90 días desde el canje o el último traslado.</li>
+    <li><strong>Recuentos mensuales de los planes de pago</strong>: hasta 30 días después del final del mes al que se refieren.</li>
+    <li><strong>Registros técnicos de los proveedores</strong> (IP, hora, resultado, sin contenido): durante los plazos breves que fijan los proveedores.</li>
+    <li><strong>Activaciones en el servidor de licencias</strong>: mientras la licencia Premium esté en uso; se borran de inmediato con «Desactivar en este teléfono», o en todo caso tras 90 días sin renovación. Hashes de las claves bloqueadas: mientras sean necesarios.</li>
+    <li><strong>Datos de compra</strong>: 10 años, por obligaciones fiscales.</li>
+    <li><strong>Anuncios guardados en el dispositivo o en el navegador</strong>: hasta que los borres.</li>
+  </ul>
+
+  <h2>5. Destinatarios y transferencias</h2>
+  <p>Utilizamos estos proveedores, que tratan los datos por cuenta nuestra (encargados del tratamiento, art. 28 RGPD), salvo donde se indique:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (Estados Unidos): inteligencia artificial que redacta el borrador (Workers AI), servidor de licencias (Workers), archivos de actualización (R2);</li>
+    <li><strong>Vercel</strong> (Estados Unidos): alojamiento de marketplace-apps.com y de la versión web, incluido el paso de la foto y el texto hacia la inteligencia artificial;</li>
+    <li><strong>Supabase</strong> (base de datos en la Unión Europea, Irlanda): recuentos de análisis, paquetes de análisis canjeados y sesiones de la versión web;</li>
+    <li><strong>Resend</strong> (Estados Unidos): envío del email con la clave;</li>
+    <li><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong> (Luxemburgo): pago, como responsable independiente.</li>
+  </ul>
+  <p>
+    Algunos proveedores tienen sede en Estados Unidos o usan infraestructuras en varios países, por lo que los datos pueden tratarse fuera de la Unión Europea. La transferencia se basa en la decisión de adecuación de la Comisión Europea para las empresas adheridas al EU-U.S. Data Privacy Framework (Decisión de Ejecución (UE) 2023/1795, art. 45 RGPD) o en las cláusulas contractuales tipo aprobadas por la Comisión (art. 46 RGPD), según indique cada proveedor.
+  </p>
+  <p>Las plataformas que se abren con «Buscar en…» no son proveedores nuestros: son responsables independientes de los datos que recogen cuando las visitas.</p>
+  <p>No vendemos ni cedemos tus datos a nadie.</p>
+
+  <h2>6. Tus derechos</h2>
+  <p>El RGPD te reconoce el derecho a acceder a tus datos, rectificarlos, suprimirlos, limitar su tratamiento, oponerte y recibirlos en un formato legible.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Derecho</th><th>Cómo</th></tr>
+    <tr><td>Acceso y rectificación (arts. 15 y 16)</td><td>Todos los anuncios se pueden ver y modificar en la app. Para los datos de la licencia (por ejemplo el email) escríbenos.</td></tr>
+    <tr><td>Supresión (art. 17)</td><td>Borra los anuncios desde la app o desinstálala. Para la licencia usa «Desactivar en este teléfono» o escríbenos.</td></tr>
+    <tr><td>Limitación y oposición (arts. 18 y 21)</td><td>Escríbenos para los tratamientos basados en el interés legítimo.</td></tr>
+    <tr><td>Portabilidad (art. 20)</td><td>Puedes copiar o compartir cada anuncio; para los datos de la licencia escríbenos.</td></tr>
+    <tr><td>Reclamación</td><td>Autoridad italiana de protección de datos, Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>), o la autoridad del país en el que resides.</td></tr>
+  </table>
+  </div>
+  <p>Las fotos y los textos no se quedan en nuestros servidores: no podemos mostrártelos ni borrarlos porque no los tenemos.</p>
+
+  <h2>7. Seguridad</h2>
+  <p>Todas las comunicaciones se hacen por HTTPS. Los datos se guardan en la memoria privada de la app, que Android aísla de las demás apps. Te recomendamos mantener activo el bloqueo de pantalla y actualizado el sistema operativo.</p>
+
+  <h2>8. Menores</h2>
+  <p>La app está pensada para personas mayores de edad que venden sus propios objetos y no está destinada a menores de 18 años.</p>
+
+  <h2>9. Comentario sobre el precio y estimaciones</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">El comentario sobre el precio y la «estimación de nicho» los escribe la inteligencia artificial a partir de la foto y del precio que has indicado. <strong>No se basan en ventas reales ni en datos de mercado verificados</strong>, no leen los precios de las plataformas y pueden ser erróneos o no estar actualizados.</p>
+    <p style="margin-bottom:0">Las comisiones de las plataformas son orientativas y pueden cambiar: comprueba siempre precios y comisiones en la plataforma (también con «Buscar en…») antes de decidir. El precio lo decides tú.</p>
+  </div>
+
+  <h2>10. Distribución y pago</h2>
+  <p>
+    SnapListo se distribuye solo a través de <a href="https://marketplace-apps.com">marketplace-apps.com</a>, no a través de Google Play; el APK está firmado digitalmente. Android puede mostrar un aviso durante la instalación: es normal en las apps instaladas fuera de Play Store.
+  </p>
+  <p>
+    Los paquetes y Premium se compran en la web con un pago único, <strong>sin renovación automática</strong>. El pago se realiza en una página de PayPal: los datos de pago se los das a PayPal, no a nosotros, y <strong>nunca vemos los datos de tu tarjeta o de tu cuenta</strong> (<a href="https://www.paypal.com/privacy">declaración de privacidad de PayPal</a>). De PayPal recibimos el email, el importe, la fecha y el país del comprador, que necesitamos para enviarte la clave, para la asistencia y por obligaciones fiscales.
+  </p>
+
+  <h2>11. Cambios en esta política</h2>
+  <p>Si cambiamos esta política de forma sustancial, por ejemplo enviando otros datos o usando otro proveedor de inteligencia artificial, te lo mostraremos en la app. La fecha de arriba indica la última actualización. En caso de diferencias entre idiomas, prevalece la versión italiana.</p>
+
+  <h2>12. Contacto</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a> — respondemos en el plazo de un mes, como prevé el art. 12 RGPD.</p>
+
+</section>
+
+<section class="lingua" id="fr" lang="fr">
+
+  <h1>Politique de confidentialité — SnapListo</h1>
+  <div class="meta">Dernière mise à jour : 08/11/2026 &nbsp;·&nbsp; Version : 1.0 (app SnapListo 1.0.0 et suivantes, Android et web)</div>
+
+  <div class="summary">
+    <strong>En bref.</strong>
+    <ul>
+      <li>Pas d'inscription, pas de compte. Pas de publicité, pas de statistiques d'utilisation, pas de profilage.</li>
+      <li>Quand vous demandez une annonce, <strong>la photo de l'objet</strong> (réduite sur le téléphone) ainsi que le <strong>prix et la note</strong> que vous saisissez passent par notre site marketplace-apps.com vers l'intelligence artificielle de Cloudflare, <strong>uniquement pour rédiger le brouillon</strong>. Nous ne les conservons pas, et Cloudflare déclare ne pas les conserver et <strong>ne pas les utiliser pour entraîner</strong> ses modèles.</li>
+      <li><strong>Photographiez uniquement l'objet</strong> : pas de personnes, de visages, de documents, de plaques d'immatriculation, d'adresses ni d'autres données personnelles (point 2.2).</li>
+      <li>Les annonces restent <strong>uniquement sur votre téléphone</strong> (version web : uniquement dans votre navigateur).</li>
+      <li>Pour faire respecter l'essai gratuit, le serveur garde une empreinte de l'appareil et, pour une limite large (24 heures dans l'app, 30 jours sur le web), aussi une <strong>empreinte de l'adresse IP</strong> conservée 30 jours, jamais l'adresse en clair (point 2.7).</li>
+      <li>Les boutons <strong>« Rechercher sur… »</strong> ouvrent des sites tiers (par exemple Leboncoin ou Vinted), qui ont leurs propres règles de confidentialité (point 2.5).</li>
+      <li>Les paiements se font sur <strong>PayPal</strong> : nous ne voyons jamais les données de votre carte ou de votre compte.</li>
+    </ul>
+  </div>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>
+    Hubert Montero / Développeur indépendant / SnapListo (Italie)<br />
+    E-mail : <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>Vous pouvez écrire à l'adresse ci-dessus pour toute question concernant vos données. Aucun délégué à la protection des données (DPO) n'a été désigné.</p>
+
+  <h2>2. Quelles données l'app traite</h2>
+
+  <h3>2.1 Photo et texte pour créer l'annonce</h3>
+  <p>Vous prenez la photo de l'objet avec l'app appareil photo du téléphone ou vous la choisissez avec le sélecteur de photos du système : SnapListo ne reçoit que la photo choisie. Vous indiquez le prix de départ et, si vous le souhaitez, une note. Ensuite :</p>
+  <ol>
+    <li><strong>Sur le téléphone</strong>, l'app réduit la photo (grand côté de 1024 pixels au maximum, format JPEG) et <strong>supprime ses métadonnées</strong> (EXIF), comme la position GPS et le modèle du téléphone.</li>
+    <li><strong>Envoi à notre site.</strong> L'app envoie à marketplace-apps.com la photo réduite, le prix de départ, la note facultative (200 caractères au maximum), la langue, le marché (pays) et la devise choisis, l'empreinte de l'appareil (point 2.7) et, si vous avez Premium, le jeton d'activation (point 2.8).</li>
+    <li><strong>L'intelligence artificielle rédige le brouillon.</strong> Le site transmet la photo et le texte à <strong>Cloudflare Workers AI</strong>, qui répond avec un titre, une description, une catégorie, l'état et un commentaire sur le prix. Cloudflare déclare <strong>ne pas conserver</strong> les données d'entrée et de sortie au-delà du temps nécessaire au traitement de la demande et <strong>ne pas les utiliser pour entraîner des modèles d'intelligence artificielle</strong> ; il ne conserve que des données techniques de fonctionnement (par exemple heure, tailles, nombre de jetons), sans le contenu (<a href="https://developers.cloudflare.com/workers-ai/platform/privacy/" target="_blank" rel="noopener">page confidentialité de Workers AI</a>).</li>
+    <li><strong>Aucune copie sur le serveur.</strong> Notre site n'enregistre ni la photo, ni le texte, ni le brouillon : il les transmet et renvoie le résultat à l'app. Pour mesurer les coûts, il n'enregistre que des nombres : <strong>jetons utilisés, coût et durée</strong> de chaque demande, jamais la photo, la note ni le texte généré. Les fournisseurs d'infrastructure (Vercel et Cloudflare) peuvent garder brièvement des journaux techniques des requêtes (adresse IP, heure, résultat), sans la photo ni le texte.</li>
+  </ol>
+  <p>Le brouillon est entièrement modifiable : vérifiez-le toujours avant de le publier. L'intelligence artificielle peut se tromper sur l'objet, le modèle ou l'état.</p>
+
+  <h3>2.2 Photographiez uniquement l'objet</h3>
+  <div class="attenzione">
+    <strong>Ne photographiez pas de personnes, de visages, de documents, de plaques d'immatriculation, d'écrans affichant des données, d'adresses, de lettres ni d'étiquettes d'expédition.</strong> Tout ce qui est visible sur la photo est envoyé à l'intelligence artificielle pour rédiger l'annonce. De même, n'écrivez pas dans la note de données personnelles vous concernant ou concernant d'autres personnes (numéros de téléphone, adresses, noms). Si une photo en contient, prenez-en une autre ou recadrez-la avant de l'envoyer.
+  </div>
+
+  <h3>2.3 Annonces enregistrées sur l'appareil</h3>
+  <p>
+    Les annonces, avec la photo réduite (pour la revoir et la partager), les prix et les calculs de bénéfice, sont enregistrés <strong>uniquement sur le téléphone</strong>, dans la mémoire privée de l'app (version web : uniquement dans le navigateur que vous utilisez). <strong>Ils ne sont transmis à personne</strong> : nous ne pouvons ni les lire ni les récupérer si vous les perdez. La photo reste jusqu'à ce que vous supprimiez l'annonce. Vous les supprimez depuis l'app, ou tous à la fois en désinstallant l'app ou en effaçant les données du site dans le navigateur.
+  </p>
+
+  <h3>2.4 Calcul du bénéfice</h3>
+  <p>
+    Le calcul (prix de vente moins coût d'achat, frais de port et commission de la plateforme) se fait sur l'appareil. L'app télécharge depuis notre site un tableau des commissions indicatives par plateforme et par pays : il est identique pour tous et la requête ne contient aucune donnée vous concernant. Vous pouvez corriger chaque commission à la main.
+  </p>
+
+  <h3>2.5 Boutons « Rechercher sur… »</h3>
+  <p>
+    Les boutons « Rechercher sur… » ouvrent, dans le navigateur ou dans l'app de la plateforme, la page de recherche d'un site tiers (par exemple Leboncoin, Vinted, eBay, Amazon, Facebook Marketplace, Subito, Wallapop, Kleinanzeigen, OLX) avec le <strong>titre de l'annonce</strong> comme terme de recherche. Le titre parvient donc à ce site. Nous ne lisons rien sur ces sites et ne recevons rien d'eux. À partir de ce moment, c'est <strong>la politique de confidentialité du site que vous ouvrez</strong> qui s'applique ; il peut utiliser ses propres cookies et outils. Nous n'avons aucune relation commerciale avec ces plateformes.
+  </p>
+
+  <h3>2.6 Partager et copier</h3>
+  <p>Si vous partagez ou copiez l'annonce, c'est vous qui la transmettez à l'app de votre choix (par exemple une messagerie ou la plateforme de vente). Elle ne passe pas par nous.</p>
+
+  <h3>2.7 Essai gratuit et décompte des analyses</h3>
+  <p>
+    L'essai gratuit comprend 3 analyses, <strong>une seule fois</strong> par appareil. Pour le faire respecter, et pour compter les analyses des formules payantes, l'app envoie une <strong>empreinte de l'appareil</strong> : un code obtenu par une fonction de hachage (SHA-256) à partir du nom de l'app et de l'identifiant Android (ANDROID_ID). <strong>L'identifiant Android n'est jamais envoyé en clair</strong> et l'empreinte est différente pour chaque app. Dans la version web, à la place de l'empreinte, l'app utilise un code aléatoire enregistré dans le navigateur.
+  </p>
+  <p>
+    <strong>Limite aussi par adresse IP (app et web).</strong> Pour empêcher de refaire l'essai en inventant des appareils ou en effaçant le code du navigateur, le serveur compte aussi les essais gratuits par adresse IP, depuis l'app Android comme depuis le web, avec une limite large : 24 heures dans l'app, 30 jours sur le web. Le serveur n'enregistre pas l'adresse IP : il n'en garde qu'une <strong>empreinte</strong> (un hachage salé), conservée <strong>30 jours</strong>, et le nombre d'analyses gratuites utilisées par cette empreinte. Si vous partagez votre connexion avec d'autres personnes (par exemple en famille, au bureau ou sur un réseau public), l'essai gratuit utilisé par l'une d'elles peut apparaître comme déjà utilisé pour vous aussi.
+  </p>
+  <p>
+    Le serveur n'enregistre pas l'empreinte telle quelle mais un hachage salé, et conserve : le compteur de l'essai gratuit, les analyses des packs liées à l'appareil, le type d'analyse (gratuite, pack ou Premium), le mois et le nombre d'analyses effectuées. Il n'enregistre ni la photo, ni le texte, ni le brouillon, ni l'adresse IP en clair.
+  </p>
+  <p>
+    Si le budget mensuel des essais gratuits est épuisé, les essais gratuits s'arrêtent jusqu'à la date indiquée dans l'app ; les personnes qui ont acheté un pack ou Premium continuent d'utiliser leurs analyses.
+  </p>
+
+  <h3>2.8 Premium, packs d'analyses et activation sur l'appareil</h3>
+  <p><strong>Premium.</strong> Quand vous activez la clé Premium, l'app se connecte à notre serveur de licences (<code>licenze.hubertmontero8514.workers.dev</code>, un service Cloudflare Workers géré par nous) et envoie la <strong>clé de licence</strong>, qui contient l'adresse e-mail de l'acheteur, la formule et la date d'expiration, ainsi que l'<strong>empreinte de l'appareil</strong> décrite au point 2.7. Le serveur répond par une activation signée que l'app vérifie sur l'appareil ; l'activation est renouvelée automatiquement au plus tous les 30 jours, seulement si le téléphone est connecté.</p>
+  <p>Le serveur de licences <strong>ne conserve pas votre e-mail</strong> ni la clé en clair. Il conserve uniquement : le hachage SHA-256 de la clé ; l'empreinte de l'appareil ; la formule ; la date d'activation et celle du dernier renouvellement ; si vous changez de téléphone, la date du dernier remplacement ; si une clé est bloquée (par exemple après un remboursement ou un abus), le hachage de cette clé. Le bouton <strong>Désactiver sur ce téléphone</strong> supprime du serveur la ligne de cet appareil.</p>
+  <p><strong>Packs d'analyses.</strong> Après l'achat, vous recevez par e-mail un <strong>code</strong>, utilisable <strong>une seule fois</strong>. Il s'utilise sur marketplace-apps.com, pas sur le serveur de licences : la base de données du marketplace (Supabase, Union européenne) marque le code comme utilisé, n'en garde qu'une empreinte et lie les analyses du pack à l'appareil (à l'empreinte du point 2.7 ; dans la version web, à l'identifiant enregistré dans le navigateur). Si vous changez d'appareil, ou si vous effacez les données du site dans le navigateur, les analyses restantes peuvent être transférées sur un autre appareil <strong>au plus une fois tous les 30 jours</strong>, en utilisant à nouveau le même code sur le nouvel appareil. Le bouton « Désactiver sur ce téléphone » ne concerne que Premium et ne supprime pas les analyses du pack.</p>
+  <p>L'identifiant Android n'est lu que pour l'activation et le décompte des analyses, jamais pour la publicité ou les statistiques.</p>
+
+  <h3>2.9 Mises à jour de l'app</h3>
+  <p>Au démarrage et depuis les réglages, l'app demande à <code>marketplace-apps.com</code> quelle est la dernière version et, s'il y en a une nouvelle, télécharge le paquet depuis <code>files.marketplace-apps.com</code> (Cloudflare R2). C'est vous qui confirmez l'installation. Ces requêtes ne contiennent pas vos annonces : le serveur ne voit que l'adresse IP.</p>
+
+  <h3>2.10 Version web</h3>
+  <ul>
+    <li>Les annonces restent <strong>uniquement dans le navigateur que vous utilisez</strong> ; si vous effacez les données du site ou changez de navigateur, vous ne les retrouverez pas.</li>
+    <li>L'identifiant aléatoire enregistré dans le navigateur sert au décompte et aux analyses des packs ; l'empreinte de l'IP reste 30 jours sur le serveur (point 2.7).</li>
+    <li>Un cookie technique mémorise que vous avez lu l'avis initial.</li>
+    <li>Si vous activez une clé, le serveur du marketplace ouvre une <strong>session</strong> liée au navigateur avec un cookie technique (<code>httpOnly</code>) et conserve l'empreinte du code de session, l'empreinte de la clé, la formule, l'expiration et l'e-mail contenu dans la clé ; les sessions sont supprimées 30 jours après l'expiration de la licence.</li>
+  </ul>
+  <p>Les détails sur les cookies du site figurent dans la <a href="https://marketplace-apps.com/fr/privacy">politique de confidentialité de marketplace-apps.com</a>.</p>
+
+  <h3>2.11 Autorisations Android</h3>
+  <ul>
+    <li><strong>Internet</strong> : pour créer l'annonce, activer Premium, utiliser les codes, télécharger le tableau des commissions et les mises à jour.</li>
+    <li><strong>Installation des mises à jour</strong> : pour vous proposer d'installer la nouvelle version téléchargée ; Android vous demande toujours confirmation.</li>
+  </ul>
+  <p>L'app <strong>ne demande pas l'autorisation d'accéder à l'appareil photo ni à la galerie</strong> : vous prenez la photo avec l'app appareil photo du téléphone ou vous la choisissez avec le sélecteur de photos du système, qui ne transmet à SnapListo que la photo sélectionnée. Elle ne demande pas non plus d'autorisation de localisation, de contacts, de micro ni de messages.</p>
+
+  <h3>2.12 Ce que l'app NE fait PAS</h3>
+  <ul>
+    <li>elle ne conserve pas sur des serveurs les photos, les textes ni les annonces ;</li>
+    <li>elle ne publie rien à votre place sur les plateformes de vente et ne se connecte pas à vos comptes sur ces plateformes ;</li>
+    <li>elle ne lit pas de données sur des sites tiers (pas d'API, pas de lecture automatique des pages) ;</li>
+    <li>elle ne collecte pas de statistiques d'utilisation et n'utilise aucun outil d'analyse ou de publicité ;</li>
+    <li>elle ne crée pas de profils et ne prend pas de décisions automatisées vous concernant.</li>
+  </ul>
+
+  <h2>3. Base juridique et finalités</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Finalité</th><th>Données</th><th>Base juridique (Règlement (UE) 2016/679, RGPD)</th></tr>
+    <tr><td>Créer le brouillon d'annonce avec l'intelligence artificielle, à votre demande</td><td>Photo réduite, prix, note, langue, marché et devise ; empreinte de l'appareil ; jeton Premium</td><td>Exécution du service que vous demandez (art. 6, par. 1, point b)</td></tr>
+    <tr><td>Faire respecter l'essai gratuit et les limites des formules</td><td>Empreinte de l'appareil ou du code du navigateur ; empreinte de l'adresse IP ; mois et nombre d'analyses</td><td>Intérêt légitime (art. 6, par. 1, point f) à prévenir les abus de l'essai gratuit, qui a un coût réel. Nous n'utilisons que des empreintes et des nombres ; vous pouvez vous y opposer (point 6)</td></tr>
+    <tr><td>Vente de la clé ou du pack et envoi par e-mail après le paiement</td><td>E-mail, données de la transaction, pays de l'acheteur</td><td>Contrat (art. 6, par. 1, point b) et obligations fiscales (art. 6, par. 1, point c)</td></tr>
+    <tr><td>Activation de Premium et gestion des packs d'analyses</td><td>Premium : hachage de la clé, empreinte, formule, dates. Packs : empreinte du code, empreinte de l'appareil, analyses restantes, dates</td><td>Contrat de licence (art. 6, par. 1, point b)</td></tr>
+    <tr><td>Prévention des abus de licences (clés bloquées, changements de téléphone)</td><td>Uniquement des hachages et des dates</td><td>Intérêt légitime (art. 6, par. 1, point f) ; vous pouvez vous y opposer (point 6)</td></tr>
+    <tr><td>Mises à jour et sécurité de l'app</td><td>Adresse IP, version de l'app</td><td>Intérêt légitime (art. 6, par. 1, point f)</td></tr>
+  </table>
+  </div>
+  <p>Les annonces enregistrées sur l'appareil sont traitées par vous : nous ne les recevons pas. Nous n'utilisons pas vos données à des fins de marketing ou de profilage.</p>
+
+  <h2>4. Durée de conservation</h2>
+  <ul>
+    <li><strong>Photo, texte et brouillon envoyés pour l'analyse</strong> : non conservés, ni par nous ni par Cloudflare ; ils servent uniquement à la réponse.</li>
+    <li><strong>Registre des coûts</strong> (jetons, coût et durée de chaque requête) : uniquement des nombres, jamais la photo, la note ni le texte généré.</li>
+    <li><strong>Compteur de l'essai gratuit</strong> (empreinte salée de l'appareil ou du navigateur et nombre d'analyses utilisées) : 12 mois à compter de la dernière utilisation.</li>
+    <li><strong>Empreinte de l'adresse IP</strong> (app et web) : 30 jours.</li>
+    <li><strong>Packs d'analyses</strong> (empreinte du code, empreinte de l'appareil, analyses restantes, dates ; base de données du marketplace) : tant qu'il reste des analyses à utiliser ; ensuite ils sont supprimés, mais pas avant 90 jours après l'utilisation du code ou le dernier transfert.</li>
+    <li><strong>Décomptes mensuels des formules payantes</strong> : jusqu'à 30 jours après la fin du mois concerné.</li>
+    <li><strong>Journaux techniques des fournisseurs</strong> (IP, heure, résultat, sans contenu) : pendant les courtes durées prévues par les fournisseurs.</li>
+    <li><strong>Activations sur le serveur de licences</strong> : tant que la licence Premium est utilisée ; supprimées immédiatement avec « Désactiver sur ce téléphone », ou en tout cas après 90 jours sans renouvellement. Hachages des clés bloquées : tant qu'ils sont nécessaires.</li>
+    <li><strong>Données d'achat</strong> : 10 ans, pour les obligations fiscales.</li>
+    <li><strong>Annonces enregistrées sur l'appareil ou dans le navigateur</strong> : jusqu'à ce que vous les supprimiez.</li>
+  </ul>
+
+  <h2>5. Destinataires et transferts</h2>
+  <p>Nous faisons appel à ces fournisseurs, qui traitent les données pour notre compte (sous-traitants, art. 28 RGPD), sauf indication contraire :</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (États-Unis) : intelligence artificielle qui rédige le brouillon (Workers AI), serveur de licences (Workers), fichiers de mise à jour (R2) ;</li>
+    <li><strong>Vercel</strong> (États-Unis) : hébergement de marketplace-apps.com et de la version web, y compris le transfert de la photo et du texte vers l'intelligence artificielle ;</li>
+    <li><strong>Supabase</strong> (base de données dans l'Union européenne, Irlande) : décomptes des analyses, packs d'analyses utilisés et sessions de la version web ;</li>
+    <li><strong>Resend</strong> (États-Unis) : envoi de l'e-mail contenant la clé ;</li>
+    <li><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong> (Luxembourg) : paiement, en tant que responsable autonome.</li>
+  </ul>
+  <p>
+    Certains fournisseurs sont établis aux États-Unis ou utilisent des infrastructures dans plusieurs pays ; les données peuvent donc être traitées hors de l'Union européenne. Le transfert repose sur la décision d'adéquation de la Commission européenne pour les entreprises adhérant à l'EU-U.S. Data Privacy Framework (décision d'exécution (UE) 2023/1795, art. 45 RGPD) ou sur les clauses contractuelles types approuvées par la Commission (art. 46 RGPD), selon ce qu'indique chaque fournisseur.
+  </p>
+  <p>Les plateformes ouvertes avec « Rechercher sur… » ne sont pas nos fournisseurs : elles sont responsables autonomes des données qu'elles collectent lorsque vous les visitez.</p>
+  <p>Nous ne vendons ni ne cédons vos données à personne.</p>
+
+  <h2>6. Vos droits</h2>
+  <p>Le RGPD vous reconnaît le droit d'accéder à vos données, de les rectifier, de les effacer, d'en limiter le traitement, de vous y opposer et de les recevoir dans un format lisible.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Droit</th><th>Comment</th></tr>
+    <tr><td>Accès et rectification (art. 15 et 16)</td><td>Toutes les annonces sont visibles et modifiables dans l'app. Pour les données de licence (par exemple l'e-mail), écrivez-nous.</td></tr>
+    <tr><td>Effacement (art. 17)</td><td>Supprimez les annonces dans l'app ou désinstallez-la. Pour la licence, utilisez « Désactiver sur ce téléphone » ou écrivez-nous.</td></tr>
+    <tr><td>Limitation et opposition (art. 18 et 21)</td><td>Écrivez-nous pour les traitements fondés sur l'intérêt légitime.</td></tr>
+    <tr><td>Portabilité (art. 20)</td><td>Vous pouvez copier ou partager chaque annonce ; pour les données de licence, écrivez-nous.</td></tr>
+    <tr><td>Réclamation</td><td>Autorité italienne de protection des données, Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>), ou l'autorité du pays où vous résidez.</td></tr>
+  </table>
+  </div>
+  <p>Les photos et les textes ne restent pas sur nos serveurs : nous ne pouvons ni vous les montrer ni les effacer, car nous ne les avons pas.</p>
+
+  <h2>7. Sécurité</h2>
+  <p>Toutes les communications passent par HTTPS. Les données sont enregistrées dans la mémoire privée de l'app, qu'Android isole des autres apps. Nous vous conseillons de garder le verrouillage de l'écran activé et le système à jour.</p>
+
+  <h2>8. Mineurs</h2>
+  <p>L'app est conçue pour des personnes majeures qui vendent leurs propres objets et n'est pas destinée aux moins de 18 ans.</p>
+
+  <h2>9. Commentaire sur le prix et estimations</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">Le commentaire sur le prix et l'« estimation de niche » sont rédigés par l'intelligence artificielle à partir de la photo et du prix que vous avez indiqués. <strong>Ils ne reposent pas sur des ventes réelles ni sur des données de marché vérifiées</strong>, ne lisent pas les prix des plateformes et peuvent être faux ou dépassés.</p>
+    <p style="margin-bottom:0">Les commissions des plateformes sont indicatives et peuvent changer : vérifiez toujours les prix et les commissions sur la plateforme (y compris avec « Rechercher sur… ») avant de décider. C'est vous qui fixez le prix.</p>
+  </div>
+
+  <h2>10. Distribution et paiement</h2>
+  <p>
+    SnapListo est distribuée uniquement via <a href="https://marketplace-apps.com">marketplace-apps.com</a>, et non via Google Play ; l'APK est signé numériquement. Android peut afficher un avertissement pendant l'installation : c'est normal pour les apps installées en dehors du Play Store.
+  </p>
+  <p>
+    Les packs et Premium s'achètent sur le site par un paiement unique, <strong>sans renouvellement automatique</strong>. Le paiement a lieu sur une page PayPal : vous donnez vos données de paiement à PayPal, pas à nous, et <strong>nous ne voyons jamais les données de votre carte ou de votre compte</strong> (<a href="https://www.paypal.com/privacy">déclaration de confidentialité de PayPal</a>). PayPal nous transmet l'e-mail, le montant, la date et le pays de l'acheteur, nécessaires pour vous envoyer la clé, pour l'assistance et pour les obligations fiscales.
+  </p>
+
+  <h2>11. Modifications de cette politique</h2>
+  <p>Si nous modifions cette politique de manière substantielle, par exemple en envoyant d'autres données ou en utilisant un autre fournisseur d'intelligence artificielle, nous vous l'indiquerons dans l'app. La date en haut indique la dernière mise à jour. En cas de divergence entre les langues, la version italienne fait foi.</p>
+
+  <h2>12. Contact</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a> — nous répondons dans un délai d'un mois, comme le prévoit l'art. 12 RGPD.</p>
+
+</section>
+
+<section class="lingua" id="de" lang="de">
+
+  <h1>Datenschutzerklärung — SnapListo</h1>
+  <div class="meta">Letzte Aktualisierung: 08.11.2026 &nbsp;·&nbsp; Version: 1.0 (App SnapListo 1.0.0 und neuer, Android und Web)</div>
+
+  <div class="summary">
+    <strong>Kurz gesagt.</strong>
+    <ul>
+      <li>Keine Registrierung, kein Konto. Keine Werbung, keine Nutzungsstatistiken, kein Profiling.</li>
+      <li>Wenn du eine Anzeige anforderst, gehen <strong>das Foto des Gegenstands</strong> (auf dem Handy verkleinert) sowie der <strong>Preis und die Notiz</strong>, die du eingibst, über unsere Website marketplace-apps.com an die künstliche Intelligenz von Cloudflare, <strong>nur um den Entwurf zu schreiben</strong>. Wir speichern sie nicht, und Cloudflare erklärt, sie nicht zu speichern und <strong>nicht zum Training</strong> seiner Modelle zu verwenden.</li>
+      <li><strong>Fotografiere nur den Gegenstand</strong>: keine Personen, Gesichter, Dokumente, Kennzeichen, Adressen oder sonstigen personenbezogenen Daten (Punkt 2.2).</li>
+      <li>Die Anzeigen bleiben <strong>nur auf deinem Handy</strong> (in der Webversion: nur in deinem Browser).</li>
+      <li>Um die kostenlose Testphase durchzusetzen, speichert der Server einen Fingerabdruck des Geräts und, für eine großzügige Grenze (in der App 24 Stunden, im Web 30 Tage), auch einen <strong>Fingerabdruck der IP-Adresse</strong> für 30 Tage, nie die Adresse selbst (Punkt 2.7).</li>
+      <li>Die Schaltflächen <strong>„Suchen auf…“</strong> öffnen Websites Dritter (zum Beispiel Kleinanzeigen oder Vinted), die eigene Datenschutzregeln haben (Punkt 2.5).</li>
+      <li>Bezahlt wird über <strong>PayPal</strong>: Wir sehen nie deine Karten- oder Kontodaten.</li>
+    </ul>
+  </div>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Hubert Montero / Unabhängiger Entwickler / SnapListo (Italien)<br />
+    E-Mail: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>Für alle Fragen zu deinen Daten kannst du an die obige Adresse schreiben. Ein Datenschutzbeauftragter (DSB) wurde nicht benannt.</p>
+
+  <h2>2. Welche Daten die App verarbeitet</h2>
+
+  <h3>2.1 Foto und Text zum Erstellen der Anzeige</h3>
+  <p>Du nimmst das Foto des Gegenstands mit der Kamera-App des Handys auf oder wählst es mit der Fotoauswahl des Systems: SnapListo erhält nur das Foto, das du auswählst. Du gibst einen Startpreis und, wenn du möchtest, eine Notiz an. Dann:</p>
+  <ol>
+    <li><strong>Auf dem Handy</strong> verkleinert die App das Foto (längste Seite höchstens 1024 Pixel, JPEG-Format) und <strong>entfernt seine Metadaten</strong> (EXIF), etwa den GPS-Standort und das Handymodell.</li>
+    <li><strong>Senden an unsere Website.</strong> Die App sendet an marketplace-apps.com das verkleinerte Foto, den Startpreis, die optionale Notiz (höchstens 200 Zeichen), die gewählte Sprache, den Markt (Land) und die Währung, den Geräte-Fingerabdruck (Punkt 2.7) und, falls du Premium hast, das Aktivierungstoken (Punkt 2.8).</li>
+    <li><strong>Die künstliche Intelligenz schreibt den Entwurf.</strong> Die Website gibt Foto und Text an <strong>Cloudflare Workers AI</strong> weiter, die mit Titel, Beschreibung, Kategorie, Zustand und einem Kommentar zum Preis antwortet. Cloudflare erklärt, Ein- und Ausgaben <strong>nicht länger zu speichern</strong>, als zur Bearbeitung der Anfrage nötig, und sie <strong>nicht zum Training von KI-Modellen zu verwenden</strong>; gespeichert werden nur technische Betriebsdaten (zum Beispiel Uhrzeit, Größen, Anzahl der Tokens), ohne den Inhalt (<a href="https://developers.cloudflare.com/workers-ai/platform/privacy/" target="_blank" rel="noopener">Datenschutzseite von Workers AI</a>).</li>
+    <li><strong>Keine Kopie auf dem Server.</strong> Unsere Website speichert weder das Foto noch den Text noch den Entwurf: Sie leitet sie weiter und gibt das Ergebnis an die App zurück. Um die Kosten zu messen, speichert sie nur Zahlen: <strong>verbrauchte Tokens, Kosten und Dauer</strong> jeder Anfrage, nie das Foto, die Notiz oder den erzeugten Text. Die Infrastrukturanbieter (Vercel und Cloudflare) können für kurze Zeit technische Protokolle der Anfragen aufbewahren (IP-Adresse, Uhrzeit, Ergebnis), ohne das Foto und ohne den Text.</li>
+  </ol>
+  <p>Der Entwurf ist vollständig bearbeitbar: Prüfe ihn immer, bevor du ihn veröffentlichst. Die künstliche Intelligenz kann sich beim Gegenstand, Modell oder Zustand irren.</p>
+
+  <h3>2.2 Fotografiere nur den Gegenstand</h3>
+  <div class="attenzione">
+    <strong>Fotografiere keine Personen, Gesichter, Dokumente, Kennzeichen, Bildschirme mit Daten, Adressen, Briefe oder Versandetiketten.</strong> Alles, was auf dem Foto zu sehen ist, wird an die künstliche Intelligenz gesendet, um die Anzeige zu schreiben. Schreibe ebenso keine personenbezogenen Daten von dir oder anderen in die Notiz (Telefonnummern, Adressen, Namen). Enthält ein Foto solche Daten, mach ein neues oder schneide es vor dem Senden zu.
+  </div>
+
+  <h3>2.3 Auf dem Gerät gespeicherte Anzeigen</h3>
+  <p>
+    Anzeigen werden zusammen mit dem verkleinerten Foto (damit du es wieder ansehen und teilen kannst), den Preisen und den Gewinnberechnungen <strong>nur auf dem Handy</strong> gespeichert, im privaten Speicher der App (in der Webversion: nur in dem Browser, den du verwendest). <strong>Sie werden an niemanden übermittelt</strong>: Wir können sie weder lesen noch wiederherstellen, wenn du sie verlierst. Das Foto bleibt, bis du die Anzeige löschst. Du löschst sie in der App, oder alle auf einmal, indem du die App deinstallierst oder die Website-Daten im Browser löschst.
+  </p>
+
+  <h3>2.4 Gewinnberechnung</h3>
+  <p>
+    Die Berechnung (Verkaufspreis minus Einkaufspreis, Versand und Plattformgebühr) erfolgt auf dem Gerät. Die App lädt von unserer Website eine Tabelle mit unverbindlichen Gebühren je Plattform und Land herunter: Sie ist für alle gleich und die Anfrage enthält keine Daten über dich. Du kannst jede Gebühr von Hand ändern.
+  </p>
+
+  <h3>2.5 Schaltflächen „Suchen auf…“</h3>
+  <p>
+    Die Schaltflächen „Suchen auf…“ öffnen im Browser oder in der App der Plattform die Suchseite einer Website Dritter (zum Beispiel Kleinanzeigen, Vinted, eBay, Amazon, Facebook Marketplace, Subito, Leboncoin, Wallapop, OLX) mit dem <strong>Titel der Anzeige</strong> als Suchbegriff. Der Titel gelangt also zu dieser Website. Wir lesen nichts von diesen Websites und erhalten nichts von ihnen. Ab diesem Moment gilt <strong>die Datenschutzerklärung der Website, die du öffnest</strong>; sie kann eigene Cookies und Werkzeuge verwenden. Wir haben keine Geschäftsbeziehung zu diesen Plattformen.
+  </p>
+
+  <h3>2.6 Teilen und kopieren</h3>
+  <p>Wenn du die Anzeige teilst oder kopierst, gibst du sie selbst an die App deiner Wahl weiter (zum Beispiel eine Messaging-App oder die Verkaufsplattform). Sie läuft nicht über uns.</p>
+
+  <h3>2.7 Kostenlose Testphase und Zählung der Analysen</h3>
+  <p>
+    Die kostenlose Testphase umfasst 3 Analysen, <strong>nur einmal</strong> pro Gerät. Um sie durchzusetzen und die Analysen der kostenpflichtigen Tarife zu zählen, sendet die App einen <strong>Geräte-Fingerabdruck</strong>: einen Code, der mit einer Hashfunktion (SHA-256) aus dem App-Namen und der Android-Kennung (ANDROID_ID) gebildet wird. <strong>Die Android-Kennung wird nie im Klartext gesendet</strong>, und der Fingerabdruck ist für jede App anders. In der Webversion verwendet die App statt des Fingerabdrucks einen im Browser gespeicherten Zufallscode.
+  </p>
+  <p>
+    <strong>Begrenzung auch nach IP-Adresse (App und Web).</strong> Damit niemand die Testphase wiederholt, indem er Geräte erfindet oder den Browsercode löscht, zählt der Server die kostenlosen Testphasen auch pro IP-Adresse, sowohl aus der Android-App als auch im Web, mit einer großzügigen Grenze: in der App 24 Stunden, im Web 30 Tage. Der Server speichert die IP-Adresse nicht: Er speichert nur einen <strong>Fingerabdruck</strong> davon (einen gesalzenen Hash), der <strong>30 Tage</strong> aufbewahrt wird, und die Anzahl der kostenlosen Analysen, die mit diesem Fingerabdruck genutzt wurden. Wenn du deine Verbindung mit anderen teilst (zum Beispiel in der Familie, im Büro oder in einem öffentlichen Netz), kann eine von einer dieser Personen genutzte Testphase auch für dich als bereits genutzt erscheinen.
+  </p>
+  <p>
+    Der Server speichert den Fingerabdruck nicht unverändert, sondern als gesalzenen Hash, und bewahrt auf: den Zähler der kostenlosen Testphase, die an das Gerät gebundenen Paket-Analysen, die Art der Analyse (kostenlos, Paket oder Premium), den Monat und die Anzahl der durchgeführten Analysen. Er speichert weder das Foto noch den Text, den Entwurf oder die IP-Adresse im Klartext.
+  </p>
+  <p>
+    Ist das monatliche Budget für die kostenlosen Testphasen aufgebraucht, werden diese bis zu dem in der App angegebenen Datum ausgesetzt; wer ein Paket oder Premium gekauft hat, kann seine Analysen weiter nutzen.
+  </p>
+
+  <h3>2.8 Premium, Analysepakete und Aktivierung auf dem Gerät</h3>
+  <p><strong>Premium.</strong> Wenn du den Premium-Schlüssel aktivierst, verbindet sich die App mit unserem Lizenzserver (<code>licenze.hubertmontero8514.workers.dev</code>, ein von uns betriebener Cloudflare-Workers-Dienst) und sendet den <strong>Lizenzschlüssel</strong>, der die E-Mail-Adresse des Käufers, den Tarif und das Ablaufdatum enthält, sowie den in Punkt 2.7 beschriebenen <strong>Geräte-Fingerabdruck</strong>. Der Server antwortet mit einer signierten Aktivierung, die die App auf dem Gerät prüft; die Aktivierung wird automatisch höchstens alle 30 Tage erneuert, nur wenn das Handy online ist.</p>
+  <p>Der Lizenzserver <strong>speichert deine E-Mail nicht</strong> und auch nicht den Schlüssel im Klartext. Er speichert nur: den SHA-256-Hash des Schlüssels; den Geräte-Fingerabdruck; den Tarif; das Aktivierungsdatum und das Datum der letzten Erneuerung; bei einem Handywechsel das Datum des letzten Wechsels; wird ein Schlüssel gesperrt (zum Beispiel nach einer Erstattung oder einem Missbrauch), den Hash dieses Schlüssels. Die Schaltfläche <strong>Auf diesem Handy deaktivieren</strong> löscht den Eintrag dieses Geräts vom Server.</p>
+  <p><strong>Analysepakete.</strong> Nach dem Kauf erhältst du per E-Mail einen <strong>Code</strong>, der sich <strong>nur einmal</strong> einlösen lässt. Er wird auf marketplace-apps.com eingelöst, nicht über den Lizenzserver: Die Datenbank des Marketplace (Supabase, Europäische Union) markiert den Code als verwendet, speichert nur einen Fingerabdruck davon und bindet die Analysen des Pakets an das Gerät (an den Fingerabdruck aus Punkt 2.7; in der Webversion an die im Browser gespeicherte Kennung). Wenn du das Gerät wechselst oder im Browser die Website-Daten löschst, können die verbleibenden Analysen <strong>höchstens einmal alle 30 Tage</strong> auf ein anderes Gerät übertragen werden, indem du denselben Code dort erneut einlöst. Die Schaltfläche „Auf diesem Handy deaktivieren“ betrifft nur Premium und löscht keine Paket-Analysen.</p>
+  <p>Die Android-Kennung wird nur für die Aktivierung und die Zählung der Analysen gelesen, nie für Werbung oder Statistiken.</p>
+
+  <h3>2.9 App-Updates</h3>
+  <p>Beim Start und in den Einstellungen fragt die App bei <code>marketplace-apps.com</code> nach der neuesten Version und lädt, falls es eine neue gibt, das Paket von <code>files.marketplace-apps.com</code> (Cloudflare R2) herunter. Die Installation bestätigst du. Diese Anfragen enthalten keine deiner Anzeigen: Der Server sieht nur die IP-Adresse.</p>
+
+  <h3>2.10 Webversion</h3>
+  <ul>
+    <li>Die Anzeigen bleiben <strong>nur in dem Browser, den du verwendest</strong>; wenn du die Website-Daten löschst oder den Browser wechselst, findest du sie nicht wieder.</li>
+    <li>Die im Browser gespeicherte Zufallskennung dient der Zählung und den Paket-Analysen; der IP-Fingerabdruck bleibt 30 Tage auf dem Server (Punkt 2.7).</li>
+    <li>Ein technisches Cookie merkt sich, dass du den ersten Hinweis gelesen hast.</li>
+    <li>Wenn du einen Schlüssel aktivierst, öffnet der Marketplace-Server eine an den Browser gebundene <strong>Sitzung</strong> mit einem technischen Cookie (<code>httpOnly</code>) und speichert den Fingerabdruck des Sitzungscodes, den Fingerabdruck des Schlüssels, den Tarif, das Ablaufdatum und die im Schlüssel enthaltene E-Mail; die Sitzungen werden 30 Tage nach Ablauf der Lizenz gelöscht.</li>
+  </ul>
+  <p>Einzelheiten zu den Cookies der Website stehen in der <a href="https://marketplace-apps.com/de/privacy">Datenschutzerklärung von marketplace-apps.com</a>.</p>
+
+  <h3>2.11 Android-Berechtigungen</h3>
+  <ul>
+    <li><strong>Internet</strong>: um die Anzeige zu erstellen, Premium zu aktivieren, Codes einzulösen, die Gebührentabelle und Updates herunterzuladen.</li>
+    <li><strong>Installation von Updates</strong>: um dir die Installation der heruntergeladenen neuen Version anzubieten; Android fragt dich immer nach einer Bestätigung.</li>
+  </ul>
+  <p>Die App fragt <strong>weder nach der Kamera-Berechtigung noch nach Zugriff auf die Galerie</strong>: Du nimmst das Foto mit der Kamera-App des Handys auf oder wählst es mit der Fotoauswahl des Systems, die nur das ausgewählte Foto an SnapListo übergibt. Sie fragt auch nicht nach Berechtigungen für Standort, Kontakte, Mikrofon oder Nachrichten.</p>
+
+  <h3>2.12 Was die App NICHT tut</h3>
+  <ul>
+    <li>Sie speichert keine Fotos, Texte oder Anzeigen auf Servern;</li>
+    <li>sie veröffentlicht nichts in deinem Namen auf Verkaufsplattformen und verbindet sich nicht mit deinen Konten dort;</li>
+    <li>sie liest keine Daten von Websites Dritter (keine APIs, kein automatisches Auslesen von Seiten);</li>
+    <li>sie erhebt keine Nutzungsstatistiken und verwendet keine Analyse- oder Werbewerkzeuge;</li>
+    <li>sie erstellt keine Profile und trifft keine automatisierten Entscheidungen über dich.</li>
+  </ul>
+
+  <h2>3. Rechtsgrundlage und Zwecke</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Zweck</th><th>Daten</th><th>Rechtsgrundlage (Verordnung (EU) 2016/679, DSGVO)</th></tr>
+    <tr><td>Erstellen des Anzeigenentwurfs mit künstlicher Intelligenz, wenn du es anforderst</td><td>Verkleinertes Foto, Preis, Notiz, Sprache, Markt und Währung; Geräte-Fingerabdruck; Premium-Token</td><td>Erbringung des von dir angeforderten Dienstes (Art. 6 Abs. 1 lit. b)</td></tr>
+    <tr><td>Durchsetzung der kostenlosen Testphase und der Tarifgrenzen</td><td>Fingerabdruck des Geräts oder des Browsercodes; Fingerabdruck der IP-Adresse; Monat und Anzahl der Analysen</td><td>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f), Missbrauch der kostenlosen Testphase zu verhindern, die echte Kosten verursacht. Wir verwenden nur Fingerabdrücke und Zahlen; du kannst widersprechen (Punkt 6)</td></tr>
+    <tr><td>Verkauf des Schlüssels oder Pakets und Versand per E-Mail nach der Zahlung</td><td>E-Mail, Transaktionsdaten, Land des Käufers</td><td>Vertrag (Art. 6 Abs. 1 lit. b) und steuerliche Pflichten (Art. 6 Abs. 1 lit. c)</td></tr>
+    <tr><td>Aktivierung von Premium und Verwaltung der Analysepakete</td><td>Premium: Hash des Schlüssels, Fingerabdruck, Tarif, Daten. Pakete: Fingerabdruck des Codes, Geräte-Fingerabdruck, verbleibende Analysen, Daten</td><td>Lizenzvertrag (Art. 6 Abs. 1 lit. b)</td></tr>
+    <tr><td>Verhinderung von Lizenzmissbrauch (gesperrte Schlüssel, Handywechsel)</td><td>Nur Hashes und Daten</td><td>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f); du kannst widersprechen (Punkt 6)</td></tr>
+    <tr><td>Updates und Sicherheit der App</td><td>IP-Adresse, App-Version</td><td>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f)</td></tr>
+  </table>
+  </div>
+  <p>Die auf dem Gerät gespeicherten Anzeigen verarbeitest du selbst: Wir erhalten sie nicht. Wir verwenden deine Daten nicht für Marketing oder Profiling.</p>
+
+  <h2>4. Speicherdauer</h2>
+  <ul>
+    <li><strong>Für die Analyse gesendetes Foto, Text und Entwurf</strong>: nicht gespeichert, weder von uns noch von Cloudflare; sie dienen nur der Antwort.</li>
+    <li><strong>Kostenprotokoll</strong> (Tokens, Kosten und Dauer jeder Anfrage): nur Zahlen, nie das Foto, die Notiz oder der erzeugte Text.</li>
+    <li><strong>Zähler der kostenlosen Testphase</strong> (gesalzener Fingerabdruck des Geräts oder Browsers und Anzahl der genutzten Analysen): 12 Monate ab der letzten Nutzung.</li>
+    <li><strong>Fingerabdruck der IP-Adresse</strong> (App und Web): 30 Tage.</li>
+    <li><strong>Analysepakete</strong> (Fingerabdruck des Codes, Geräte-Fingerabdruck, verbleibende Analysen, Daten; Datenbank des Marketplace): solange noch Analysen übrig sind; danach werden sie gelöscht, jedoch nicht vor 90 Tagen ab dem Einlösen oder der letzten Übertragung.</li>
+    <li><strong>Monatliche Zählungen der kostenpflichtigen Tarife</strong>: bis 30 Tage nach Ende des betreffenden Monats.</li>
+    <li><strong>Technische Protokolle der Anbieter</strong> (IP, Uhrzeit, Ergebnis, ohne Inhalt): für die kurzen, von den Anbietern vorgesehenen Fristen.</li>
+    <li><strong>Aktivierungen auf dem Lizenzserver</strong>: solange die Premium-Lizenz genutzt wird; sofort gelöscht mit „Auf diesem Handy deaktivieren“ oder spätestens nach 90 Tagen ohne Erneuerung. Hashes gesperrter Schlüssel: solange erforderlich.</li>
+    <li><strong>Kaufdaten</strong>: 10 Jahre, wegen steuerlicher Pflichten.</li>
+    <li><strong>Auf dem Gerät oder im Browser gespeicherte Anzeigen</strong>: bis du sie löschst.</li>
+  </ul>
+
+  <h2>5. Empfänger und Übermittlungen</h2>
+  <p>Wir nutzen folgende Anbieter, die Daten in unserem Auftrag verarbeiten (Auftragsverarbeiter, Art. 28 DSGVO), soweit nicht anders angegeben:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (Vereinigte Staaten): künstliche Intelligenz, die den Entwurf schreibt (Workers AI), Lizenzserver (Workers), Update-Dateien (R2);</li>
+    <li><strong>Vercel</strong> (Vereinigte Staaten): Hosting von marketplace-apps.com und der Webversion, einschließlich der Weitergabe von Foto und Text an die künstliche Intelligenz;</li>
+    <li><strong>Supabase</strong> (Datenbank in der Europäischen Union, Irland): Zählung der Analysen, eingelöste Analysepakete und Sitzungen der Webversion;</li>
+    <li><strong>Resend</strong> (Vereinigte Staaten): Versand der E-Mail mit dem Schlüssel;</li>
+    <li><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong> (Luxemburg): Zahlung, als eigenständiger Verantwortlicher.</li>
+  </ul>
+  <p>
+    Einige Anbieter haben ihren Sitz in den Vereinigten Staaten oder nutzen Infrastruktur in mehreren Ländern; Daten können daher außerhalb der Europäischen Union verarbeitet werden. Die Übermittlung stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission für Unternehmen, die am EU-U.S. Data Privacy Framework teilnehmen (Durchführungsbeschluss (EU) 2023/1795, Art. 45 DSGVO), oder auf die von der Kommission genehmigten Standardvertragsklauseln (Art. 46 DSGVO), je nach Angabe des jeweiligen Anbieters.
+  </p>
+  <p>Die mit „Suchen auf…“ geöffneten Plattformen sind nicht unsere Anbieter: Sie sind eigenständige Verantwortliche für die Daten, die sie bei deinem Besuch erheben.</p>
+  <p>Wir verkaufen deine Daten nicht und geben sie an niemanden weiter.</p>
+
+  <h2>6. Deine Rechte</h2>
+  <p>Die DSGVO gibt dir das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Erhalt deiner Daten in einem lesbaren Format.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Recht</th><th>Wie</th></tr>
+    <tr><td>Auskunft und Berichtigung (Art. 15 und 16)</td><td>Alle Anzeigen sind in der App sichtbar und bearbeitbar. Für Lizenzdaten (zum Beispiel die E-Mail) schreib uns.</td></tr>
+    <tr><td>Löschung (Art. 17)</td><td>Lösche die Anzeigen in der App oder deinstalliere sie. Für die Lizenz nutze „Auf diesem Handy deaktivieren“ oder schreib uns.</td></tr>
+    <tr><td>Einschränkung und Widerspruch (Art. 18 und 21)</td><td>Schreib uns zu Verarbeitungen, die auf berechtigtem Interesse beruhen.</td></tr>
+    <tr><td>Datenübertragbarkeit (Art. 20)</td><td>Du kannst jede Anzeige kopieren oder teilen; für Lizenzdaten schreib uns.</td></tr>
+    <tr><td>Beschwerde</td><td>Italienische Datenschutzbehörde, Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>), oder die Behörde des Landes, in dem du wohnst.</td></tr>
+  </table>
+  </div>
+  <p>Fotos und Texte bleiben nicht auf unseren Servern: Wir können sie dir weder zeigen noch löschen, weil wir sie nicht haben.</p>
+
+  <h2>7. Sicherheit</h2>
+  <p>Die gesamte Kommunikation läuft über HTTPS. Die Daten werden im privaten Speicher der App gespeichert, den Android von anderen Apps trennt. Wir empfehlen, die Bildschirmsperre aktiviert und das Betriebssystem aktuell zu halten.</p>
+
+  <h2>8. Minderjährige</h2>
+  <p>Die App richtet sich an Volljährige, die eigene Gegenstände verkaufen, und ist nicht für Personen unter 18 Jahren bestimmt.</p>
+
+  <h2>9. Preiskommentar und Schätzungen</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">Der Preiskommentar und die „Nischenschätzung“ werden von der künstlichen Intelligenz anhand des Fotos und des von dir angegebenen Preises geschrieben. <strong>Sie beruhen nicht auf echten Verkäufen oder geprüften Marktdaten</strong>, lesen keine Preise der Plattformen und können falsch oder veraltet sein.</p>
+    <p style="margin-bottom:0">Die Plattformgebühren sind unverbindlich und können sich ändern: Prüfe Preise und Gebühren immer auf der Plattform (auch mit „Suchen auf…“), bevor du entscheidest. Den Preis legst du fest.</p>
+  </div>
+
+  <h2>10. Vertrieb und Zahlung</h2>
+  <p>
+    SnapListo wird nur über <a href="https://marketplace-apps.com">marketplace-apps.com</a> vertrieben, nicht über Google Play; die APK ist digital signiert. Android kann bei der Installation eine Warnung anzeigen: Das ist bei Apps außerhalb des Play Store normal.
+  </p>
+  <p>
+    Pakete und Premium werden auf der Website mit einer Einmalzahlung gekauft, <strong>ohne automatische Verlängerung</strong>. Die Zahlung erfolgt auf einer PayPal-Seite: Deine Zahlungsdaten gibst du PayPal, nicht uns, und <strong>wir sehen nie deine Karten- oder Kontodaten</strong> (<a href="https://www.paypal.com/privacy">Datenschutzerklärung von PayPal</a>). Von PayPal erhalten wir E-Mail, Betrag, Datum und Land des Käufers, die wir für den Versand des Schlüssels, den Support und steuerliche Pflichten benötigen.
+  </p>
+
+  <h2>11. Änderungen dieser Erklärung</h2>
+  <p>Wenn wir diese Erklärung wesentlich ändern, zum Beispiel weil wir andere Daten senden oder einen anderen KI-Anbieter nutzen, zeigen wir dir das in der App an. Das Datum oben nennt die letzte Aktualisierung. Bei Abweichungen zwischen den Sprachfassungen ist die italienische Fassung maßgeblich.</p>
+
+  <h2>12. Kontakt</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a> — wir antworten innerhalb eines Monats, wie in Art. 12 DSGVO vorgesehen.</p>
+
+</section>
+
+<section class="lingua" id="pt" lang="pt">
+
+  <h1>Política de privacidade — SnapListo</h1>
+  <div class="meta">Última atualização: 08/11/2026 &nbsp;·&nbsp; Versão: 1.0 (app SnapListo 1.0.0 e seguintes, Android e web)</div>
+
+  <div class="summary">
+    <strong>Em resumo.</strong>
+    <ul>
+      <li>Não há registo nem conta. Sem publicidade, sem estatísticas de utilização, sem definição de perfis.</li>
+      <li>Quando pedes um anúncio, <strong>a foto do objeto</strong> (reduzida no telemóvel) e o <strong>preço e a nota</strong> que introduzes passam pelo nosso site marketplace-apps.com para a inteligência artificial da Cloudflare, <strong>apenas para escrever o rascunho</strong>. Não os guardamos, e a Cloudflare declara que não os guarda e que <strong>não os usa para treinar</strong> os seus modelos.</li>
+      <li><strong>Fotografa apenas o objeto</strong>: nada de pessoas, rostos, documentos, matrículas, moradas ou outros dados pessoais (ponto 2.2).</li>
+      <li>Os anúncios ficam <strong>apenas no teu telemóvel</strong> (na versão web: apenas no teu navegador).</li>
+      <li>Para fazer respeitar o teste gratuito, o servidor guarda uma impressão do dispositivo e, para um limite largo (24 horas na app, 30 dias na web), também uma <strong>impressão do endereço IP</strong> conservada 30 dias, nunca o endereço em claro (ponto 2.7).</li>
+      <li>Os botões <strong>«Pesquisar em…»</strong> abrem sites de terceiros (por exemplo OLX ou Vinted), que têm as suas próprias regras de privacidade (ponto 2.5).</li>
+      <li>Os pagamentos são feitos no <strong>PayPal</strong>: nunca vemos os dados do teu cartão ou da tua conta.</li>
+    </ul>
+  </div>
+
+  <h2>1. Responsável pelo tratamento</h2>
+  <p>
+    Hubert Montero / Programador independente / SnapListo (Itália)<br />
+    Email: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>Podes escrever para o endereço acima sobre qualquer questão relativa aos teus dados. Não foi designado um encarregado da proteção de dados (DPO).</p>
+
+  <h2>2. Que dados a app trata</h2>
+
+  <h3>2.1 Foto e texto para criar o anúncio</h3>
+  <p>Tiras a foto do objeto com a app de câmara do telemóvel ou escolhe-la com o seletor de fotos do sistema: a SnapListo recebe apenas a foto que escolhes. Indicas o preço de partida e, se quiseres, uma nota. Depois:</p>
+  <ol>
+    <li><strong>No telemóvel</strong> a app reduz a foto (lado maior com 1024 píxeis no máximo, formato JPEG) e <strong>remove os metadados</strong> (EXIF), como a localização GPS e o modelo do telemóvel.</li>
+    <li><strong>Envio para o nosso site.</strong> A app envia para marketplace-apps.com a foto reduzida, o preço de partida, a nota opcional (200 caracteres no máximo), a língua, o mercado (país) e a moeda escolhidos, a impressão do dispositivo (ponto 2.7) e, se tiveres Premium, o token de ativação (ponto 2.8).</li>
+    <li><strong>A inteligência artificial escreve o rascunho.</strong> O site passa a foto e o texto à <strong>Cloudflare Workers AI</strong>, que responde com título, descrição, categoria, estado e um comentário sobre o preço. A Cloudflare declara que <strong>não guarda</strong> os dados de entrada e de saída para além do tempo necessário para processar o pedido e que <strong>não os usa para treinar modelos de inteligência artificial</strong>; guarda apenas dados técnicos de funcionamento (por exemplo hora, tamanhos, número de tokens), sem o conteúdo (<a href="https://developers.cloudflare.com/workers-ai/platform/privacy/" target="_blank" rel="noopener">página de privacidade da Workers AI</a>).</li>
+    <li><strong>Nenhuma cópia no servidor.</strong> O nosso site não guarda a foto, o texto nem o rascunho: reencaminha-os e devolve o resultado à app. Para medir os custos regista apenas números: <strong>tokens usados, custo e duração</strong> de cada pedido, nunca a foto, a nota ou o texto gerado. Os fornecedores de infraestrutura (Vercel e Cloudflare) podem guardar por pouco tempo registos técnicos dos pedidos (endereço IP, hora, resultado), sem a foto e sem o texto.</li>
+  </ol>
+  <p>O rascunho é totalmente editável: verifica-o sempre antes de o publicar. A inteligência artificial pode enganar-se a reconhecer o objeto, o modelo ou o estado.</p>
+
+  <h3>2.2 Fotografa apenas o objeto</h3>
+  <div class="attenzione">
+    <strong>Não fotografes pessoas, rostos, documentos, matrículas, ecrãs com dados, moradas, cartas ou etiquetas de envio.</strong> Tudo o que se vê na foto é enviado para a inteligência artificial para escrever o anúncio. Da mesma forma, não escrevas na nota dados pessoais teus ou de outras pessoas (números de telefone, moradas, nomes). Se uma foto os contiver, tira outra ou recorta-a antes de a enviar.
+  </div>
+
+  <h3>2.3 Anúncios guardados no dispositivo</h3>
+  <p>
+    Os anúncios, juntamente com a foto reduzida (para a voltares a ver e partilhar), os preços e os cálculos de lucro, são guardados <strong>apenas no telemóvel</strong>, na memória privada da app (na versão web: apenas no navegador que usas). <strong>Não são transmitidos a ninguém</strong>: não os podemos ler nem recuperar se os perderes. A foto fica guardada até apagares o anúncio. És tu que os apagas na app, ou todos de uma vez desinstalando a app ou apagando os dados do site no navegador.
+  </p>
+
+  <h3>2.4 Cálculo do lucro</h3>
+  <p>
+    O cálculo (preço de venda menos custo de compra, envio e comissão da plataforma) é feito no dispositivo. A app descarrega do nosso site uma tabela de comissões indicativas por plataforma e país: é igual para todos e o pedido não contém dados teus. Podes corrigir à mão cada comissão.
+  </p>
+
+  <h3>2.5 Botões «Pesquisar em…»</h3>
+  <p>
+    Os botões «Pesquisar em…» abrem, no navegador ou na app da plataforma, a página de pesquisa de um site de terceiros (por exemplo OLX, Vinted, eBay, Amazon, Facebook Marketplace, Subito, Leboncoin, Wallapop, Kleinanzeigen) com o <strong>título do anúncio</strong> como termo de pesquisa. O título chega, portanto, a esse site. Nós não lemos nada desses sites nem recebemos nada deles. A partir desse momento aplica-se <strong>a política de privacidade do site que abres</strong>, que pode usar os seus próprios cookies e ferramentas. Não temos relações comerciais com estas plataformas.
+  </p>
+
+  <h3>2.6 Partilhar e copiar</h3>
+  <p>Se partilhares ou copiares o anúncio, és tu que o passas à app que escolhes (por exemplo uma app de mensagens ou a plataforma de venda). Não passa por nós.</p>
+
+  <h3>2.7 Teste gratuito e contagem das análises</h3>
+  <p>
+    O teste gratuito inclui 3 análises, <strong>uma única vez</strong> por dispositivo. Para o fazer respeitar, e para contar as análises dos planos pagos, a app envia uma <strong>impressão do dispositivo</strong>: um código obtido com uma função hash (SHA-256) a partir do nome da app e do identificador Android (ANDROID_ID). <strong>O identificador Android nunca é enviado em claro</strong> e a impressão é diferente para cada app. Na versão web, em vez da impressão, a app usa um código aleatório guardado no navegador.
+  </p>
+  <p>
+    <strong>Limite também por endereço IP (app e web).</strong> Para impedir que alguém repita o teste inventando dispositivos ou apagando o código do navegador, o servidor conta os testes gratuitos também por endereço IP, tanto na app Android como na web, com um limite largo: 24 horas na app, 30 dias na web. O servidor não guarda o endereço IP: guarda apenas uma <strong>impressão</strong> dele (um hash com sal), conservada <strong>30 dias</strong>, e o número de análises gratuitas usadas por essa impressão. Se partilhares a ligação com outras pessoas (por exemplo em casa, no escritório ou numa rede pública), o teste gratuito usado por uma delas pode aparecer como já usado também para ti.
+  </p>
+  <p>
+    O servidor não guarda a impressão tal como é, mas um hash com sal, e conserva: o contador do teste gratuito, as análises dos pacotes ligadas ao dispositivo, o tipo de análise (gratuita, pacote ou Premium), o mês e o número de análises feitas. Não guarda a foto, o texto, o rascunho nem o endereço IP em claro.
+  </p>
+  <p>
+    Se o orçamento mensal dos testes gratuitos se esgotar, os testes gratuitos param até à data indicada na app; quem comprou um pacote ou Premium continua a usar as suas análises.
+  </p>
+
+  <h3>2.8 Premium, pacotes de análises e ativação no dispositivo</h3>
+  <p><strong>Premium.</strong> Quando ativas a chave Premium, a app liga-se ao nosso servidor de licenças (<code>licenze.hubertmontero8514.workers.dev</code>, um serviço Cloudflare Workers gerido por nós) e envia a <strong>chave de licença</strong>, que contém o endereço de email do comprador, o plano e a data de expiração, e a <strong>impressão do dispositivo</strong> descrita no ponto 2.7. O servidor responde com uma ativação assinada que a app verifica no dispositivo; a ativação é renovada automaticamente no máximo a cada 30 dias, apenas se o telemóvel estiver ligado à internet.</p>
+  <p>O servidor de licenças <strong>não guarda o teu email</strong> nem a chave em claro. Guarda apenas: o hash SHA-256 da chave; a impressão do dispositivo; o plano; a data de ativação e a da última renovação; se mudares de telemóvel, a data da última substituição; se uma chave for bloqueada (por exemplo após um reembolso ou um abuso), o hash dessa chave. O botão <strong>Desativar neste telemóvel</strong> apaga do servidor a linha desse dispositivo.</p>
+  <p><strong>Pacotes de análises.</strong> Após a compra recebes por email um <strong>código</strong>, que se resgata <strong>uma única vez</strong>. Resgata-se em marketplace-apps.com, não no servidor de licenças: a base de dados do marketplace (Supabase, União Europeia) marca o código como usado, guarda apenas uma impressão dele e liga as análises do pacote ao dispositivo (à impressão do ponto 2.7; na versão web, ao identificador guardado no navegador). Se mudares de dispositivo, ou apagares os dados do site no navegador, as análises que restam podem ser transferidas para outro dispositivo <strong>no máximo uma vez a cada 30 dias</strong>, resgatando de novo o mesmo código no novo dispositivo. O botão «Desativar neste telemóvel» diz respeito apenas ao Premium e não apaga as análises do pacote.</p>
+  <p>O identificador Android só é lido para a ativação e a contagem das análises, nunca para publicidade ou estatísticas.</p>
+
+  <h3>2.9 Atualizações da app</h3>
+  <p>No arranque e a partir das definições, a app pergunta a <code>marketplace-apps.com</code> qual é a versão mais recente e, se houver uma nova, descarrega o pacote de <code>files.marketplace-apps.com</code> (Cloudflare R2). És tu que confirmas a instalação. Estes pedidos não contêm os teus anúncios: o servidor vê apenas o endereço IP.</p>
+
+  <h3>2.10 Versão web</h3>
+  <ul>
+    <li>Os anúncios ficam <strong>apenas no navegador que usas</strong>; se apagares os dados do site ou mudares de navegador, não os voltas a encontrar.</li>
+    <li>O identificador aleatório guardado no navegador serve para a contagem e para as análises dos pacotes; a impressão do IP fica no servidor 30 dias (ponto 2.7).</li>
+    <li>Um cookie técnico lembra que leste o aviso inicial.</li>
+    <li>Se ativares uma chave, o servidor do marketplace abre uma <strong>sessão</strong> ligada ao navegador com um cookie técnico (<code>httpOnly</code>) e guarda a impressão do código de sessão, a impressão da chave, o plano, a expiração e o email contido na chave; as sessões são apagadas 30 dias após a expiração da licença.</li>
+  </ul>
+  <p>Os detalhes sobre os cookies do site estão na <a href="https://marketplace-apps.com/pt/privacy">política de privacidade de marketplace-apps.com</a>.</p>
+
+  <h3>2.11 Permissões Android</h3>
+  <ul>
+    <li><strong>Internet</strong>: para criar o anúncio, ativar o Premium, resgatar códigos, descarregar a tabela de comissões e as atualizações.</li>
+    <li><strong>Instalação de atualizações</strong>: para te propor a instalação da nova versão descarregada; o Android pede sempre a tua confirmação.</li>
+  </ul>
+  <p>A app <strong>não pede permissão de câmara nem de acesso à galeria</strong>: tiras a foto com a app de câmara do telemóvel ou escolhe-la com o seletor de fotos do sistema, que passa à SnapListo apenas a foto selecionada. Também não pede permissões de localização, contactos, microfone ou mensagens.</p>
+
+  <h3>2.12 O que a app NÃO faz</h3>
+  <ul>
+    <li>não guarda em servidores as fotos, os textos ou os anúncios;</li>
+    <li>não publica nada em teu nome nas plataformas de venda nem se liga às tuas contas nessas plataformas;</li>
+    <li>não lê dados de sites de terceiros (sem API, sem leitura automática de páginas);</li>
+    <li>não recolhe estatísticas de utilização nem usa ferramentas de análise ou publicidade;</li>
+    <li>não cria perfis nem toma decisões automatizadas sobre ti.</li>
+  </ul>
+
+  <h2>3. Fundamento jurídico e finalidades</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Finalidade</th><th>Dados</th><th>Fundamento jurídico (Regulamento (UE) 2016/679, RGPD)</th></tr>
+    <tr><td>Criar o rascunho do anúncio com inteligência artificial, quando o pedes</td><td>Foto reduzida, preço, nota, língua, mercado e moeda; impressão do dispositivo; token Premium</td><td>Execução do serviço que pedes (art. 6.º, n.º 1, al. b)</td></tr>
+    <tr><td>Fazer respeitar o teste gratuito e os limites dos planos</td><td>Impressão do dispositivo ou do código do navegador; impressão do endereço IP; mês e número de análises</td><td>Interesse legítimo (art. 6.º, n.º 1, al. f) em prevenir abusos do teste gratuito, que tem um custo real. Usamos apenas impressões e números; podes opor-te (ponto 6)</td></tr>
+    <tr><td>Venda da chave ou do pacote e envio por email após o pagamento</td><td>Email, dados da transação, país do comprador</td><td>Contrato (art. 6.º, n.º 1, al. b) e obrigações fiscais (art. 6.º, n.º 1, al. c)</td></tr>
+    <tr><td>Ativação do Premium e gestão dos pacotes de análises</td><td>Premium: hash da chave, impressão, plano, datas. Pacotes: impressão do código, impressão do dispositivo, análises restantes, datas</td><td>Contrato de licença (art. 6.º, n.º 1, al. b)</td></tr>
+    <tr><td>Prevenção de abusos das licenças (chaves bloqueadas, trocas de telemóvel)</td><td>Apenas hashes e datas</td><td>Interesse legítimo (art. 6.º, n.º 1, al. f); podes opor-te (ponto 6)</td></tr>
+    <tr><td>Atualizações e segurança da app</td><td>Endereço IP, versão da app</td><td>Interesse legítimo (art. 6.º, n.º 1, al. f)</td></tr>
+  </table>
+  </div>
+  <p>Os anúncios guardados no dispositivo são tratados por ti: nós não os recebemos. Não usamos os teus dados para marketing ou definição de perfis.</p>
+
+  <h2>4. Durante quanto tempo são guardados</h2>
+  <ul>
+    <li><strong>Foto, texto e rascunho enviados para a análise</strong>: não são guardados, nem por nós nem pela Cloudflare; servem apenas para a resposta.</li>
+    <li><strong>Registo de custos</strong> (tokens, custo e duração de cada pedido): apenas números, nunca a foto, a nota ou o texto gerado.</li>
+    <li><strong>Contador do teste gratuito</strong> (impressão com sal do dispositivo ou do navegador e número de análises usadas): 12 meses a partir da última utilização.</li>
+    <li><strong>Impressão do endereço IP</strong> (app e web): 30 dias.</li>
+    <li><strong>Pacotes de análises</strong> (impressão do código, impressão do dispositivo, análises restantes, datas; base de dados do marketplace): enquanto houver análises por usar; depois são apagados, mas não antes de 90 dias a contar do resgate ou da última transferência.</li>
+    <li><strong>Contagens mensais dos planos pagos</strong>: até 30 dias após o fim do mês a que se referem.</li>
+    <li><strong>Registos técnicos dos fornecedores</strong> (IP, hora, resultado, sem conteúdo): pelos prazos curtos previstos pelos fornecedores.</li>
+    <li><strong>Ativações no servidor de licenças</strong>: enquanto a licença Premium estiver em uso; são apagadas de imediato com «Desativar neste telemóvel», ou de qualquer forma após 90 dias sem renovação. Hashes das chaves bloqueadas: enquanto forem necessários.</li>
+    <li><strong>Dados de compra</strong>: 10 anos, por obrigações fiscais.</li>
+    <li><strong>Anúncios guardados no dispositivo ou no navegador</strong>: até os apagares.</li>
+  </ul>
+
+  <h2>5. Destinatários e transferências</h2>
+  <p>Recorremos a estes fornecedores, que tratam os dados por nossa conta (subcontratantes, art. 28.º RGPD), salvo indicação em contrário:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (Estados Unidos): inteligência artificial que escreve o rascunho (Workers AI), servidor de licenças (Workers), ficheiros de atualização (R2);</li>
+    <li><strong>Vercel</strong> (Estados Unidos): alojamento de marketplace-apps.com e da versão web, incluindo a passagem da foto e do texto para a inteligência artificial;</li>
+    <li><strong>Supabase</strong> (base de dados na União Europeia, Irlanda): contagens das análises, pacotes de análises resgatados e sessões da versão web;</li>
+    <li><strong>Resend</strong> (Estados Unidos): envio do email com a chave;</li>
+    <li><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong> (Luxemburgo): pagamento, como responsável autónomo.</li>
+  </ul>
+  <p>
+    Alguns fornecedores têm sede nos Estados Unidos ou usam infraestruturas em vários países, pelo que os dados podem ser tratados fora da União Europeia. A transferência baseia-se na decisão de adequação da Comissão Europeia para as empresas aderentes ao EU-U.S. Data Privacy Framework (Decisão de Execução (UE) 2023/1795, art. 45.º RGPD) ou nas cláusulas contratuais-tipo aprovadas pela Comissão (art. 46.º RGPD), conforme indicado por cada fornecedor.
+  </p>
+  <p>As plataformas abertas com «Pesquisar em…» não são nossos fornecedores: são responsáveis autónomos pelos dados que recolhem quando as visitas.</p>
+  <p>Não vendemos nem cedemos os teus dados a ninguém.</p>
+
+  <h2>6. Os teus direitos</h2>
+  <p>O RGPD reconhece-te o direito de aceder aos teus dados, retificá-los, apagá-los, limitar o seu tratamento, opor-te e recebê-los num formato legível.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Direito</th><th>Como</th></tr>
+    <tr><td>Acesso e retificação (arts. 15.º e 16.º)</td><td>Todos os anúncios são visíveis e editáveis na app. Para os dados da licença (por exemplo o email) escreve-nos.</td></tr>
+    <tr><td>Apagamento (art. 17.º)</td><td>Apaga os anúncios na app ou desinstala-a. Para a licença usa «Desativar neste telemóvel» ou escreve-nos.</td></tr>
+    <tr><td>Limitação e oposição (arts. 18.º e 21.º)</td><td>Escreve-nos sobre os tratamentos baseados no interesse legítimo.</td></tr>
+    <tr><td>Portabilidade (art. 20.º)</td><td>Podes copiar ou partilhar cada anúncio; para os dados da licença escreve-nos.</td></tr>
+    <tr><td>Reclamação</td><td>Autoridade italiana de proteção de dados, Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>), ou a autoridade do país onde resides.</td></tr>
+  </table>
+  </div>
+  <p>As fotos e os textos não ficam nos nossos servidores: não tos podemos mostrar nem apagar, porque não os temos.</p>
+
+  <h2>7. Segurança</h2>
+  <p>Todas as comunicações são feitas em HTTPS. Os dados são guardados na memória privada da app, que o Android isola das outras apps. Recomendamos que mantenhas o bloqueio de ecrã ativo e o sistema operativo atualizado.</p>
+
+  <h2>8. Menores</h2>
+  <p>A app destina-se a pessoas maiores de idade que vendem os seus próprios objetos e não se destina a menores de 18 anos.</p>
+
+  <h2>9. Comentário ao preço e estimativas</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">O comentário ao preço e a «estimativa de nicho» são escritos pela inteligência artificial a partir da foto e do preço que indicaste. <strong>Não se baseiam em vendas reais nem em dados de mercado verificados</strong>, não leem os preços das plataformas e podem estar errados ou desatualizados.</p>
+    <p style="margin-bottom:0">As comissões das plataformas são indicativas e podem mudar: verifica sempre preços e comissões na plataforma (também com «Pesquisar em…») antes de decidir. O preço és tu que o decides.</p>
+  </div>
+
+  <h2>10. Distribuição e pagamento</h2>
+  <p>
+    A SnapListo é distribuída apenas através de <a href="https://marketplace-apps.com">marketplace-apps.com</a>, não através do Google Play; o APK é assinado digitalmente. O Android pode mostrar um aviso durante a instalação: é normal nas apps instaladas fora da Play Store.
+  </p>
+  <p>
+    Os pacotes e o Premium compram-se no site com um pagamento único, <strong>sem renovação automática</strong>. O pagamento é feito numa página do PayPal: os dados de pagamento dás tu ao PayPal, não a nós, e <strong>nunca vemos os dados do teu cartão ou da tua conta</strong> (<a href="https://www.paypal.com/privacy">declaração de privacidade do PayPal</a>). Do PayPal recebemos o email, o montante, a data e o país do comprador, que nos servem para te enviar a chave, para a assistência e por obrigações fiscais.
+  </p>
+
+  <h2>11. Alterações a esta política</h2>
+  <p>Se alterarmos esta política de forma substancial, por exemplo enviando outros dados ou usando outro fornecedor de inteligência artificial, mostrar-te-emos isso na app. A data no topo indica a última atualização. Em caso de diferenças entre as línguas, prevalece a versão italiana.</p>
+
+  <h2>12. Contacto</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a> — respondemos no prazo de um mês, como previsto no art. 12.º RGPD.</p>
+
+</section>
+
+  <footer>© 2026 Hubert Montero — SnapListo</footer>
+
+</div>
+<script>
+  (function () {
+    var lingue = ["it", "en", "es", "fr", "de", "pt"];
+    function mostra(l) {
+      if (lingue.indexOf(l) < 0) l = "en";
+      document.querySelectorAll("section.lingua").forEach(function (s) {
+        s.classList.toggle("mostra", s.id === l);
+      });
+      document.querySelectorAll("nav.lingue a").forEach(function (a) {
+        a.classList.toggle("attiva", a.getAttribute("data-l") === l);
+      });
+      document.documentElement.lang = l;
+    }
+    function scelta() {
+      var h = (location.hash || "").replace("#", "").toLowerCase();
+      if (lingue.indexOf(h) >= 0) return h;
+      var q = new URLSearchParams(location.search).get("lang");
+      if (q && lingue.indexOf(q.toLowerCase()) >= 0) return q.toLowerCase();
+      var n = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+      return n.slice(0, 2).toLowerCase();
+    }
+    window.addEventListener("hashchange", function () { mostra(scelta()); window.scrollTo(0, 0); });
+    mostra(scelta());
+  })();
+</script>
+</body>
+</html>
